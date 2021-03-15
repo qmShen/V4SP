@@ -1,4 +1,21 @@
 \BOOKMARK [1][]{section.2}{Introduction}{}% 1
 \BOOKMARK [1][]{section.4}{Related work}{}% 2
-\BOOKMARK [1][]{section.5}{Background}{}% 3
-\BOOKMARK [1][]{section.7}{Conclusion}{}% 4
+\BOOKMARK [2][]{subsection.5}{Distributed query analysis}{section.4}% 3
+\BOOKMARK [2][]{subsection.6}{Visual analytics for distributed systems}{section.4}% 4
+\BOOKMARK [2][]{subsection.7}{Visualization for temporal data}{section.4}% 5
+\BOOKMARK [1][]{section.8}{Background}{}% 6
+\BOOKMARK [1][]{section.11}{System design}{}% 7
+\BOOKMARK [2][]{subsection.12}{Requirement analysis}{section.11}% 8
+\BOOKMARK [2][]{subsection.13}{System overview}{section.11}% 9
+\BOOKMARK [1][]{section.14}{Visualization design}{}% 10
+\BOOKMARK [2][]{subsection.15}{Query execution overview}{section.14}% 11
+\BOOKMARK [3][-]{subsubsection.16}{Execution plan view}{subsection.15}% 12
+\BOOKMARK [3][-]{subsubsection.17}{Execution progress view}{subsection.15}% 13
+\BOOKMARK [2][]{subsection.18}{Task view}{section.14}% 14
+\BOOKMARK [2][]{subsection.19}{System profiling visualization}{section.14}% 15
+\BOOKMARK [2][]{subsection.20}{Linkage and interactions}{section.14}% 16
+\BOOKMARK [1][]{section.21}{Evaluation}{}% 17
+\BOOKMARK [2][]{subsection.22}{Case study}{section.21}% 18
+\BOOKMARK [2][]{subsection.23}{Expert interview}{section.21}% 19
+\BOOKMARK [1][]{section.24}{Conclusion}{}% 20
+\BOOKMARK [1][]{section.25}{Conclusion}{}% 21
