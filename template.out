@@ -4,18 +4,19 @@
 \BOOKMARK [2][]{subsection.6}{Visual analytics for distributed systems}{section.4}% 4
 \BOOKMARK [2][]{subsection.7}{Visualization for temporal data}{section.4}% 5
 \BOOKMARK [1][]{section.8}{Background}{}% 6
-\BOOKMARK [1][]{section.11}{System design}{}% 7
-\BOOKMARK [2][]{subsection.12}{Requirement analysis}{section.11}% 8
-\BOOKMARK [2][]{subsection.13}{System overview}{section.11}% 9
-\BOOKMARK [1][]{section.14}{Visualization design}{}% 10
-\BOOKMARK [2][]{subsection.15}{Query execution overview}{section.14}% 11
-\BOOKMARK [3][-]{subsubsection.16}{Execution plan view}{subsection.15}% 12
-\BOOKMARK [3][-]{subsubsection.17}{Execution progress view}{subsection.15}% 13
-\BOOKMARK [2][]{subsection.18}{Task view}{section.14}% 14
-\BOOKMARK [2][]{subsection.19}{System profiling visualization}{section.14}% 15
-\BOOKMARK [2][]{subsection.20}{Linkage and interactions}{section.14}% 16
-\BOOKMARK [1][]{section.21}{Evaluation}{}% 17
-\BOOKMARK [2][]{subsection.22}{Case study}{section.21}% 18
-\BOOKMARK [2][]{subsection.23}{Expert interview}{section.21}% 19
-\BOOKMARK [1][]{section.24}{Conclusion}{}% 20
-\BOOKMARK [1][]{section.25}{Conclusion}{}% 21
+\BOOKMARK [2][]{subsection.9}{Background of distributed query execution}{section.8}% 7
+\BOOKMARK [2][]{subsection.12}{Requirement analysis}{section.8}% 8
+\BOOKMARK [2][]{subsection.13}{Task analysis}{section.8}% 9
+\BOOKMARK [1][]{section.14}{System design}{}% 10
+\BOOKMARK [1][]{section.16}{Visualization design}{}% 11
+\BOOKMARK [2][]{subsection.17}{Query execution overview}{section.16}% 12
+\BOOKMARK [3][-]{subsubsection.18}{Execution plan view}{subsection.17}% 13
+\BOOKMARK [3][-]{subsubsection.19}{Execution progress view}{subsection.17}% 14
+\BOOKMARK [2][]{subsection.20}{Task view}{section.16}% 15
+\BOOKMARK [2][]{subsection.21}{System profiling visualization}{section.16}% 16
+\BOOKMARK [2][]{subsection.22}{Linkage and interactions}{section.16}% 17
+\BOOKMARK [1][]{section.23}{Evaluation}{}% 18
+\BOOKMARK [2][]{subsection.24}{Case study}{section.23}% 19
+\BOOKMARK [2][]{subsection.25}{Expert interview}{section.23}% 20
+\BOOKMARK [1][]{section.26}{Conclusion}{}% 21
+\BOOKMARK [1][]{section.27}{Conclusion}{}% 22
