@@ -1,7 +1,50 @@
+% \section{Visualization design}
+% \subsection{Query execution overview}
+% \subsubsection{Execution plan view}
+% \subsubsection{Execution progress view}
+% \subsection{Task view}
+% \subsection{System profiling visualization}
+% \subsection{Linkage and interactions}
+
 \section{Visualization design}
-\subsection{Query execution overview}
-\subsubsection{Execution plan view}
-\subsubsection{Execution progress view}
+A paragraph to introduce the general design consideration. Overview first, zoom ....
+\subsection{Query progress view}
+\begin{itemize}
+    \item Traditional method: Gantt diagram and design consideration 
+    \item Proposed algorithms, link processing
+    \item Alternative design
+        \begin{itemize}
+            \item Gantt(consider the vertical edge, large space, unclear structure)
+            \item New design loose(clear structure, large space)
+            \item New design compact(small space, unclear structure)
+        \end{itemize}
+\end{itemize}
+
+% -Visual form of Gantt diagram
+% -Our design consideration
+% -Algorithms
+% -Design alternatives
+% --gantt(consider the vertical edge, large space, unclear structure)
+% --new design loose(clear structure, large space)
+% --new design compact(small space, unclear structure)
+% --new design compact, edge processing(small space, clear structure)
 \subsection{Task view}
-\subsection{System profiling visualization}
-\subsection{Linkage and interactions}
+\begin{itemize}
+    \item Design consideration. Why gantt doesn't work(need very large space, difficult to show the data-flow link, difficult to show and select the abnormal cases)
+    \item Our design
+    \item Compare with design alternative (Gantt)
+\end{itemize}
+
+
+\subsection{Profiling view}
+\begin{itemize}
+    \item Our design consideration
+    \item Design: Embedding task view to profiling view
+    \item Design: Visualize the profiling results
+\end{itemize}
+
+\subsection{Interactions}
+\begin{itemize}
+    \item Multi-scale navigation
+    \item Inner and inter linking
+\end{itemize}

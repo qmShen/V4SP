@@ -1,29 +1,135 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
-\bibitem{Kitware:2003}
-Kitware, Inc.
-\newblock {\em The Visualization Toolkit User's Guide}, January 2003.
+\bibitem{cappers2017exploring}
+B.~C. Cappers and J.~J. van Wijk.
+\newblock Exploring multivariate event sequences using rules, aggregations, and
+  selections.
+\newblock {\em IEEE transactions on visualization and computer graphics},
+  24(1):532--541, 2017.
 
-\bibitem{Lorensen:1987:MCA}
-W.~E. Lorensen and H.~E. Cline.
-\newblock Marching cubes: A high resolution {3D} surface construction
-  algorithm.
-\newblock {\em SIGGRAPH Computer Graphics}, 21(4):163--169, Aug. 1987. doi: {{%
-10\hspace{.1pt}\discretionary{.}{%
-}{.}\hspace{.4pt}1145\discretionary{/}{%
-}{/}37402\hspace{.1pt}\discretionary{.}{%
-}{.}\hspace{.4pt}37422}}
+\bibitem{chen2015peakvizor}
+Q.~Chen, Y.~Chen, D.~Liu, C.~Shi, Y.~Wu, and H.~Qu.
+\newblock Peakvizor: Visual analytics of peaks in video clickstreams from
+  massive open online courses.
+\newblock {\em IEEE transactions on visualization and computer graphics},
+  22(10):2315--2330, 2015.
 
+\bibitem{chen2018viseq}
+Q.~Chen, X.~Yue, X.~Plantaz, Y.~Chen, C.~Shi, T.-C. Pong, and H.~Qu.
+\newblock Viseq: Visual analytics of learning sequence in massive open online
+  courses.
+\newblock {\em IEEE transactions on visualization and computer graphics},
+  26(3):1622--1636, 2018.
 
-\bibitem{Max:1995:OMF}
-N.~Max.
-\newblock Optical models for direct volume rendering.
-\newblock {\em IEEE Transactions on Visualization and Computer Graphics},
-  1(2):99--108, June 1995. doi: {{%
-10\hspace{.1pt}\discretionary{.}{%
-}{.}\hspace{.4pt}1109\discretionary{/}{%
-}{/}2945\hspace{.1pt}\discretionary{.}{%
-}{.}\hspace{.4pt}468400}}
+\bibitem{gotz2019visual}
+D.~Gotz, J.~Zhang, W.~Wang, J.~Shrestha, and D.~Borland.
+\newblock Visual analysis of high-dimensional event sequence data via dynamic
+  hierarchical aggregation.
+\newblock {\em IEEE transactions on visualization and computer graphics},
+  26(1):440--450, 2019.
 
+\bibitem{goulden2019ccvis}
+M.~C. Goulden, E.~Gronda, Y.~Yang, Z.~Zhang, J.~Tao, C.~Wang, X.~Duan, G.~A.
+  Ambrose, K.~Abbott, and P.~Miller.
+\newblock Ccvis: Visual analytics of student online learning behaviors using
+  course clickstream data.
+\newblock {\em Electronic Imaging}, 2019(1):681--1, 2019.
+
+\bibitem{guo2020survey}
+Y.~Guo, S.~Guo, Z.~Jin, S.~Kaul, D.~Gotz, and N.~Cao.
+\newblock Survey on visual analysis of event sequence data.
+\newblock {\em arXiv preprint arXiv:2006.14291}, 2020.
+
+\bibitem{he2019vuc}
+H.~He, B.~Dong, Q.~Zheng, and G.~Li.
+\newblock Vuc: Visualizing daily video utilization to promote student
+  engagement in online distance education.
+\newblock In {\em Proceedings of the ACM Conference on Global Computing
+  Education}, pp. 99--105, 2019.
+
+\bibitem{jo2014livegantt}
+J.~Jo, J.~Huh, J.~Park, B.~Kim, and J.~Seo.
+\newblock Livegantt: Interactively visualizing a large manufacturing schedule.
+\newblock {\em IEEE transactions on visualization and computer graphics},
+  20(12):2329--2338, 2014.
+
+\bibitem{law2018maqui}
+P.-M. Law, Z.~Liu, S.~Malik, and R.~C. Basole.
+\newblock Maqui: Interweaving queries and pattern mining for recursive event
+  sequence exploration.
+\newblock {\em IEEE transactions on visualization and computer graphics},
+  25(1):396--406, 2018.
+
+\bibitem{malik2015cohort}
+S.~Malik, F.~Du, M.~Monroe, E.~Onukwugha, C.~Plaisant, and B.~Shneiderman.
+\newblock Cohort comparison of event sequences with balanced integration of
+  visual analytics and statistics.
+\newblock In {\em Proceedings of the 20th International Conference on
+  Intelligent User Interfaces}, pp. 38--49, 2015.
+
+\bibitem{malik2016high}
+S.~Malik, B.~Shneiderman, F.~Du, C.~Plaisant, and M.~Bjarnadottir.
+\newblock High-volume hypothesis testing: Systematic exploration of event
+  sequence comparisons.
+\newblock {\em ACM Transactions on Interactive Intelligent Systems (TiiS)},
+  6(1):1--23, 2016.
+
+\bibitem{mu2019moocad}
+X.~Mu, K.~Xu, Q.~Chen, F.~Du, Y.~Wang, and H.~Qu.
+\newblock Moocad: Visual analysis of anomalous learning activities in massive
+  open online courses.
+\newblock In {\em EuroVis (Short Papers)}, pp. 91--95, 2019.
+
+\bibitem{plaisant1996lifelines}
+C.~Plaisant, B.~Milash, A.~Rose, S.~Widoff, and B.~Shneiderman.
+\newblock Lifelines: visualizing personal histories.
+\newblock In {\em Proceedings of the SIGCHI conference on Human factors in
+  computing systems}, pp. 221--227, 1996.
+
+\bibitem{riehmann2005interactive}
+P.~Riehmann, M.~Hanfler, and B.~Froehlich.
+\newblock Interactive sankey diagrams.
+\newblock In {\em IEEE Symposium on Information Visualization, 2005. INFOVIS
+  2005.}, pp. 233--240. IEEE, 2005.
+
+\bibitem{silva2000visualization}
+S.~F. Silva and T.~Catarci.
+\newblock Visualization of linear time-oriented data: a survey.
+\newblock In {\em Proceedings of the first international conference on web
+  information systems engineering}, vol.~1, pp. 310--319. IEEE, 2000.
+
+\bibitem{wongsuphasawat2011outflow}
+K.~Wongsuphasawat and D.~Gotz.
+\newblock Outflow: Visualizing patient flow by symptoms and outcome.
+\newblock In {\em IEEE VisWeek Workshop on Visual Analytics in Healthcare,
+  Providence, Rhode Island, USA}, pp. 25--28. American Medical Informatics
+  Association, 2011.
+
+\bibitem{wongsuphasawat2011lifeflow}
+K.~Wongsuphasawat, J.~A. Guerra~G{\'o}mez, C.~Plaisant, T.~D. Wang,
+  M.~Taieb-Maimon, and B.~Shneiderman.
+\newblock Lifeflow: visualizing an overview of event sequences.
+\newblock In {\em Proceedings of the SIGCHI conference on human factors in
+  computing systems}, pp. 1747--1756, 2011.
+
+\bibitem{wu2020visual}
+J.~Wu, Z.~Guo, Z.~Wang, Q.~Xu, and Y.~Wu.
+\newblock Visual analytics of multivariate event sequence data in racquet
+  sports.
+\newblock In {\em 2020 IEEE Conference on Visual Analytics Science and
+  Technology (VAST)}, pp. 36--47. IEEE, 2020.
+
+\bibitem{zhao2014fluxflow}
+J.~Zhao, N.~Cao, Z.~Wen, Y.~Song, Y.-R. Lin, and C.~Collins.
+\newblock \# fluxflow: Visual analysis of anomalous information spreading on
+  social media.
+\newblock {\em IEEE transactions on visualization and computer graphics},
+  20(12):1773--1782, 2014.
+
+\bibitem{zhao2015matrixwave}
+J.~Zhao, Z.~Liu, M.~Dontcheva, A.~Hertzmann, and A.~Wilson.
+\newblock Matrixwave: Visual comparison of event sequence data.
+\newblock In {\em Proceedings of the 33rd Annual ACM Conference on Human
+  Factors in Computing Systems}, pp. 259--268, 2015.
 
 \end{thebibliography}
