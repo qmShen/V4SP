@@ -7,6 +7,12 @@ B.~C. Cappers and J.~J. van Wijk.
 \newblock {\em IEEE transactions on visualization and computer graphics},
   24(1):532--541, 2017.
 
+\bibitem{carbone2015apache}
+P.~Carbone, A.~Katsifodimos, S.~Ewen, V.~Markl, S.~Haridi, and K.~Tzoumas.
+\newblock Apache flink: Stream and batch processing in a single engine.
+\newblock {\em Bulletin of the IEEE Computer Society Technical Committee on
+  Data Engineering}, 36(4), 2015.
+
 \bibitem{chen2015peakvizor}
 Q.~Chen, Y.~Chen, D.~Liu, C.~Shi, Y.~Wu, and H.~Qu.
 \newblock Peakvizor: Visual analytics of peaks in video clickstreams from
@@ -20,6 +26,10 @@ Q.~Chen, X.~Yue, X.~Plantaz, Y.~Chen, C.~Shi, T.-C. Pong, and H.~Qu.
   courses.
 \newblock {\em IEEE transactions on visualization and computer graphics},
   26(3):1622--1636, 2018.
+
+\bibitem{hadoop}
+A.~S. Foundation.
+\newblock The apache hadoop project.
 
 \bibitem{tez-ui}
 A.~S. Foundation.
