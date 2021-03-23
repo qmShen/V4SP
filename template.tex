@@ -85,10 +85,10 @@
 
 \newcommand{\stitle}[1]{\vspace*{0.4em}\noindent{\bf #1:\/}}
 \newcommand{\sstitle}[1]{\vspace*{0.4em}\noindent{\bf #1\/.}}
-\newcommand{\DQV}{\mathsf{DQEVis}}
+\newcommand{\DQV}{\mathsf{QEVIS}}
 
 %% Paper title.
-\title{$\DQV$: Interactive Visual Analysis of Distributed Query Execution}
+\title{$\DQV$: Understanding and Diagnosing the Fine-grained Execution Process of Hive Query via Visualization}
 
 %% This is how authors are specified in the journal style
 
@@ -110,18 +110,8 @@
 %\shortauthortitle{Firstauthor \MakeLowercase{\textit{et al.}}: Paper Title}
 
 %% Abstract section.
-\abstract{Duis autem vel eum iriure dolor in hendrerit in vulputate
-velit esse molestie consequat, vel illum dolore eu feugiat nulla
-facilisis at vero eros et accumsan et iusto odio dignissim qui blandit
-praesent luptatum zzril delenit augue duis dolore te feugait nulla
-facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
-suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem
-vel eum iriure dolor in hendrerit in vulputate velit esse molestie
-consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
-accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
-delenit augue duis dolore te feugait nulla facilisi.%
+\abstract{
+Understanding the query execution of distributed databases is crucial to many real-world practices such as detecting the query bottleneck and improving the system performance.  Such analysis is always challenging due to the large volume of tasks executed in parallel and the complex task dependencies. Moreover, the unpredicted system behaviors also affect the query execution case by case. Existing techniques usually evaluate the distributed query by the statistics of system performance (e.g., CPU, memory, and disk I/O) or execution metrics(e.g., operator duration), which lost the fine-grained information at the atom task level. To tackle this problem, we propose $\DQV$, a visual analytics system to interactively understand and diagnose the distributed query execution procedure from multiple levels. An optimized algorithm for the temporal directed acyclic graph(TDAG) layout is devised to show the overall query plan structure and execution process. A suite of novel visualization and interaction designs are integrated to estimate the correlation between the atom task trace and the system performance metrics.  We illustrate the effectiveness of our $\DQV$ with three case studies from real-world applications and interviews with domain experts.%
 } % end of abstract
 
 %% Keywords that describe your work. Will show as 'Index Terms' in journal
