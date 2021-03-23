@@ -21,6 +21,16 @@ Q.~Chen, X.~Yue, X.~Plantaz, Y.~Chen, C.~Shi, T.-C. Pong, and H.~Qu.
 \newblock {\em IEEE transactions on visualization and computer graphics},
   26(3):1622--1636, 2018.
 
+\bibitem{tez-ui}
+A.~S. Foundation.
+\newblock Tez ui.
+
+\bibitem{gathani2020debugging}
+S.~Gathani, P.~Lim, and L.~Battle.
+\newblock Debugging database queries: A survey of tools, techniques, and users.
+\newblock In {\em Proceedings of the 2020 CHI Conference on Human Factors in
+  Computing Systems}, pp. 1--16, 2020.
+
 \bibitem{gotz2019visual}
 D.~Gotz, J.~Zhang, W.~Wang, J.~Shrestha, and D.~Borland.
 \newblock Visual analysis of high-dimensional event sequence data via dynamic
@@ -74,6 +84,12 @@ S.~Malik, B.~Shneiderman, F.~Du, C.~Plaisant, and M.~Bjarnadottir.
 \newblock {\em ACM Transactions on Interactive Intelligent Systems (TiiS)},
   6(1):1--23, 2016.
 
+\bibitem{moritz2015perfopticon}
+D.~Moritz, D.~Halperin, B.~Howe, and J.~Heer.
+\newblock Perfopticon: Visual query analysis for distributed databases.
+\newblock In {\em Computer Graphics Forum}, vol.~34, pp. 71--80. Wiley Online
+  Library, 2015.
+
 \bibitem{mu2019moocad}
 X.~Mu, K.~Xu, Q.~Chen, F.~Du, Y.~Wang, and H.~Qu.
 \newblock Moocad: Visual analysis of anomalous learning activities in massive
@@ -97,6 +113,12 @@ S.~F. Silva and T.~Catarci.
 \newblock Visualization of linear time-oriented data: a survey.
 \newblock In {\em Proceedings of the first international conference on web
   information systems engineering}, vol.~1, pp. 310--319. IEEE, 2000.
+
+\bibitem{simitsis2014vqa}
+A.~Simitsis, K.~Wilkinson, J.~Blais, and J.~Walsh.
+\newblock Vqa: vertica query analyzer.
+\newblock In {\em Proceedings of the 2014 ACM SIGMOD international conference
+  on Management of data}, pp. 701--704, 2014.
 
 \bibitem{wongsuphasawat2011outflow}
 K.~Wongsuphasawat and D.~Gotz.

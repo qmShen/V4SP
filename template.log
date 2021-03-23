@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.16)  21 MAR 2021 15:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.16)  22 MAR 2021 20:42
 entering extended mode
 **./template.tex
 (template.tex
@@ -514,12 +514,12 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 LaTeX Warning: No \author given.
 
 \abstractwidth=\skip59
-<figures//CypressView.jpg, id=83, 1260.71pt x 497.86pt>
+<figures//CypressView.jpg, id=79, 1260.71pt x 497.86pt>
 File: figures//CypressView.jpg Graphic file (type jpg)
 <use figures//CypressView.jpg>
 Package pdftex.def Info: figures//CypressView.jpg  used on input line 172.
 (pdftex.def)             Requested size: 467.22528pt x 184.50919pt.
-<diamondrule.pdf, id=84, 213.79875pt x 12.045pt>
+<diamondrule.pdf, id=80, 213.79875pt x 12.045pt>
 File: diamondrule.pdf Graphic file (type pdf)
 <use diamondrule.pdf>
 Package pdftex.def Info: diamondrule.pdf  used on input line 172.
@@ -554,10 +554,9 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 File: figures/background/arc.png Graphic file (type png)
 <use figures/background/arc.png>
 Package pdftex.def Info: figures/background/arc.png  used on input line 8.
-(pdftex.def)             Requested size: 247.16118pt x 393.9155pt.
- [2 <./figures/background/arc.png>])
-(sections/system.tex
-<figures/system/sysdesign.png, id=160, 638.385pt x 427.5975pt>
+(pdftex.def)             Requested size: 231.7141pt x 369.29808pt.
+ [2]) (sections/system.tex
+<figures/system/sysdesign.png, id=163, 638.385pt x 427.5975pt>
 File: figures/system/sysdesign.png Graphic file (type png)
 <use figures/system/sysdesign.png>
 Package pdftex.def Info: figures/system/sysdesign.png  used on input line 4.
@@ -567,23 +566,25 @@ Overfull \hbox (0.99646pt too wide) in paragraph at lines 4--6
  [][] 
  []
 
-) (sections/dataprocess.tex) (sections/visualization.tex [3 <./figures/system/s
-ysdesign.png>]) (sections/evaluation.tex) (sections/conclusion.tex)
-(template.bbl) [4] (template.aux)
+[3 <./figures/background/arc.png>]) (sections/dataprocess.tex)
+(sections/visualization.tex) (sections/evaluation.tex) (sections/conclusion.tex
+) (template.bbl [4 <./figures/system/sysdesign.png>]) [5
+
+] (template.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `template.out' has not changed.
-(rerunfilecheck)             Checksum: 70BC92660097D661756C8B70DBD57332;2963.
+(rerunfilecheck)             Checksum: E2FAF4E014703CD0C8B9BC7999789FB9;2509.
  ) 
 Here is how much of TeX's memory you used:
- 11715 strings out of 479334
- 173535 string characters out of 2866936
- 524453 words of memory out of 3000000
- 28496 multiletter control sequences out of 15000+200000
- 468509 words of font info for 373 fonts, out of 3000000 for 9000
+ 11731 strings out of 479334
+ 173747 string characters out of 2866936
+ 530225 words of memory out of 3000000
+ 28499 multiletter control sequences out of 15000+200000
+ 468980 words of font info for 379 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,8n,74p,1182b,394s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 72i,8n,74p,1182b,461s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX
 /fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Program Files/MiKTeX/fonts/type1
 /public/amsfonts/cm/cmss8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfo
@@ -592,9 +593,9 @@ C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/M
 iKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw
 /times/utmbi8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C
 :/Program Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on template.pdf (4 pages, 752346 bytes).
+Output written on template.pdf (5 pages, 757141 bytes).
 PDF statistics:
- 218 PDF objects out of 1000 (max. 8388607)
- 51 named destinations out of 1000 (max. 500000)
- 101045 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 227 PDF objects out of 1000 (max. 8388607)
+ 55 named destinations out of 1000 (max. 500000)
+ 101037 words of extra memory for PDF output out of 106986 (max. 10000000)
 
