@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.16)  23 MAR 2021 21:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.16)  25 MAR 2021 00:06
 entering extended mode
 **./template.tex
 (template.tex
@@ -514,16 +514,17 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 LaTeX Warning: No \author given.
 
 \abstractwidth=\skip59
-<figures//CypressView.jpg, id=79, 1260.71pt x 497.86pt>
-File: figures//CypressView.jpg Graphic file (type jpg)
-<use figures//CypressView.jpg>
-Package pdftex.def Info: figures//CypressView.jpg  used on input line 162.
-(pdftex.def)             Requested size: 467.22528pt x 184.50919pt.
+<figures/teaser/systemview.png, id=79, 1444.64719pt x 812.28468pt>
+File: figures/teaser/systemview.png Graphic file (type png)
+<use figures/teaser/systemview.png>
+Package pdftex.def Info: figures/teaser/systemview.png  used on input line 162.
+
+(pdftex.def)             Requested size: 467.22528pt x 262.70036pt.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 162.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 162.
-<diamondrule.pdf, id=80, 213.79875pt x 12.045pt>
+<diamondrule.pdf, id=81, 213.79875pt x 12.045pt>
 File: diamondrule.pdf Graphic file (type pdf)
 <use diamondrule.pdf>
 Package pdftex.def Info: diamondrule.pdf  used on input line 162.
@@ -534,7 +535,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [1{C:/Users/Administrator/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
 
 
- <./figures//CypressView.jpg> <./diamondrule.pdf>]
+ <./figures/teaser/systemview.png> <./diamondrule.pdf>]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
@@ -544,33 +545,35 @@ LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 2
 
 (C:\Program Files\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)) (sections/related.tex)
-(sections/background.tex [2]
-<figures/background/arc.png, id=162, 505.89pt x 806.26219pt>
+)) (sections/related.tex
+[2]) (sections/background.tex
+<figures/background/arc.png, id=160, 505.89pt x 806.26219pt>
 File: figures/background/arc.png Graphic file (type png)
 <use figures/background/arc.png>
 Package pdftex.def Info: figures/background/arc.png  used on input line 8.
 (pdftex.def)             Requested size: 231.7141pt x 369.29808pt.
  [3 <./figures/background/arc.png>])
 (sections/system.tex
-<figures/system/sysdesign.pdf, id=173, 788.72469pt x 574.59064pt>
+<figures/system/sysdesign.pdf, id=174, 788.72469pt x 574.59064pt>
 File: figures/system/sysdesign.pdf Graphic file (type pdf)
 <use figures/system/sysdesign.pdf>
 Package pdftex.def Info: figures/system/sysdesign.pdf  used on input line 4.
 (pdftex.def)             Requested size: 231.7141pt x 168.80136pt.
 ) (sections/dataprocess.tex) (sections/visualization.tex)
 (sections/evaluation.tex) (sections/conclusion.tex) (template.bbl [4 <./figures
-/system/sysdesign.pdf>]) [5
+/system/sysdesign.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-] (template.aux)
+) [5]
+(template.aux)
 Package rerunfilecheck Info: File `template.out' has not changed.
 (rerunfilecheck)             Checksum: E2FAF4E014703CD0C8B9BC7999789FB9;2509.
  ) 
 Here is how much of TeX's memory you used:
- 11733 strings out of 479334
- 173819 string characters out of 2866936
- 531375 words of memory out of 3000000
- 28500 multiletter control sequences out of 15000+200000
+ 11727 strings out of 479334
+ 173791 string characters out of 2866936
+ 530677 words of memory out of 3000000
+ 28497 multiletter control sequences out of 15000+200000
  468981 words of font info for 378 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,8n,74p,1282b,463s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -582,9 +585,9 @@ C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/M
 iKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw
 /times/utmbi8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C
 :/Program Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on template.pdf (5 pages, 922201 bytes).
+Output written on template.pdf (5 pages, 653179 bytes).
 PDF statistics:
- 702 PDF objects out of 1000 (max. 8388607)
+ 703 PDF objects out of 1000 (max. 8388607)
  57 named destinations out of 1000 (max. 500000)
  101037 words of extra memory for PDF output out of 106986 (max. 10000000)
 
