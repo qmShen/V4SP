@@ -9,7 +9,7 @@
 \section{Visualization design}
 Following the data modeling, we present the web-based visual analytics system to support the interactive exploration with four coordinated views. The Execution progress demonstrates the overview about how the query plan are execute(\textbf{T1}), the Task distribution view shows the task distribution and the data dependencies. Integrated with the machine performance metrics, this view is also used for reason the specific patterns of tasks(\textbf{T2} and \textbf{T3}).  Task list provides the detailed information at the task level(\textbf{T2}).  At last, the interaction and linkage are introduced to support the multi-level explorations(\textbf{T4}).
 
-\subsection{Query Progress View}
+\subsection{Query Progress View}\label{sec:queryprogress}
 
 
 \begin{figure}[t]
@@ -21,12 +21,23 @@ Following the data modeling, we present the web-based visual analytics system to
 	\vspace{-3mm}
 \end{figure}
 
-
+\stitle{Visual encoding}
 Query Progress View is developed to overview the overall progress of query execution and the logic dependencies. 
-The commonly used methods to visualize the progress data is Gantt chart.
 
+
+The commonly used methods to visualize the progress data is Gantt chart.
 As shown by figure~\ref{fig:progress}, the x-axis indicates the timestamp. The rectangles with the same  height indicate the temporal information of logic vertices. Given a vertex $v$, the position of left sides indicates the start time $v.st$ and the duration of $v.d$ is encoded by the length of the rectangle. We use the color to encode the step and the stroke dash style to encode the type of vertex as shown by figure~\ref{fig:progress}.
 
+\stitle{Layout methods}
+
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=0.45\textwidth]{figures/visualization/exeprogress.pdf}
+	\vspace{-3mm}
+	\caption{Temporal DAG layout algorithms}
+	\label{fig:layout}
+	\vspace{-3mm}
+\end{figure}
 %\begin{itemize}
 %    \item Traditional method: Gantt diagram and design consideration 
 %    \item Proposed algorithms, link processing
@@ -63,15 +74,28 @@ Pattern Explorer is developed to provide efficient pattern discovery and reasoni
 \subsubsection{Distribution View}
 The Distribution View is designed to explore the temporal pattern and dependencies of tasks.
 
-\stitle{Visualizing the temporal information of tasks}.
+\stitle{Visualizing the temporal information of tasks}
 Before our collaboration, the domain experts use Gantt Chart Diagram to display the overall progress of tasks, shown in figure~\ref{fig:explorer}(C). 
 However, Gantt Chart Diagram-based method suffers significant scalability problem in our applications. Hundreds to thousands of tasks are associated with a vertex in our scenario, which requires a very large space to place all the horizontal bars clearly. 
-Moreover, visualizing a large number of bars in this way is difficult for users to compare the absolute length of the horizontal bars due to the lack of alignment, which hinders the users' ability to discover the group-based patterns or identify the abnormal tasks, which is shown as~\ref{fig:explorer}(C).
+Moreover, visualizing a large number of bars in this way is difficult for users to compare the absolute length of the horizontal bars due to the lack of alignment, which hinders the users' ability to discover the group-based patterns or identify the abnormal tasks.
 
 To tackle this issue, we develop a scatter-based visual representation which is shown as Figure~\ref{fig:explorer}(A). Figure~\ref{fig:explorer}(B) illustrates the visualization design which uses a square shape of rendering canvas as the basis, the vertical axis(from top to bottom) indicates the start time, and the horizontal axis(from left to right) indicates the end time.
 The task(e.g., $t_1, t_2, t_3$) with the temporal information of start time and duration can be visualized as dots layouted on the canvas. 
-This design has two benefits: 1) we simplify each horizontal bars as dots. Thus the all tasks can be presented as the point cloud in the canvas. This presentation form may results in the visual clutter caused by the gathering and overlap of dots, but can significantly highlight the clusters and outliers, which can help the users to find the task of interest; 2) we linearly map the time range to both horizontal and vertical axis. In this way, as shown by task $t_1$ in figure~\ref{fig:explorer}(B) the horizontal distance from point to the diagonal line of canvas represents the duration(e.g., $t_2.d$) of the task, which helps the users to \QM{compare the task duration}. 
+This design has two benefits: 1) we simplify each horizontal bars as dots. Thus the all tasks can be presented as the point cloud in the canvas. This presentation form may results in the visual clutter caused by the gathering and overlap of dots, but can significantly highlight the clusters and outliers, which can help the users to find the task of interest; 2) we linearly map the time range to both horizontal and vertical axis. In this way, as shown by task $t_1$ in figure~\ref{fig:explorer}(B) the horizontal distance from point to the diagonal line of canvas represents the duration(e.g., $t_2.d$) of the task, which helps the users to \QM{compare the task duration}. Generally speaking, in this view, if a task has a long duration, it tends to move to the top right corner. 
 
+We compare our design with Gantt Chart shown as ~\ref{fig:explorer}(C), we scale the height of the bars of Gantt Chart to visualize the all tasks in the view with same size of our design. It is found that in our design, the outliers are more easily observed and the overall temporal distribution is more clear in our design than Gantt Chart.
+
+\stitle{Visualizing the task dependencies} 
+The direct way to visualize the data dependencies is to use the curves such as the Query Progress View(section~\ref{sec:queryprogress}). However, such design will result in a serious visual clutter when dealing with the large data size. To solve this problem, we also transform the dependencies as a dot on the render canvas. As shown by Figure~\ref{fig:explorer}(B), the dependency $d_E$ from task $t_1$ to $t_3$ is visualized as a dot(red color rectangle) in the left bottom part of canvas, which presents the end time or producer task and the start time of consumer task.  To further deal with the scalability problem, we use heatmap instead of point cloud to improve the render efficiencies.
+
+This design utilizes the left half part of canvas and showing the distribution of dependencies according to their temporal information, allowing the users to discover the long dependency duration clusters. 
+
+To facility the interactive explorations, several interactions are implemented in this view. For example, once a task is selected, the corresponding dependencies will be highlighted on the canvas as individual points, which is shown as ~\ref{}. Moreover, users can select the time range of interest by brush the a timeline at the horizontal or vertical boundaries of canvas,then the time range of this view will be updated to allow users to switch their focus. Moreover, when the users select a vertex, the associated tasks will be highlighted in purple color, which is shown as Figure~\ref{}.
+
+\stitle{Visualizing system performance metrics}
+As introduced in section~\ref{sec:systemdesign}, several metrics affecting the query performance are collected. These metrics can be modeled as multi-dimensional time-series data. For example, a machine may have 12 CPUs, thus the usage of the CPU can be modeled as a temporal sequence with 12 dimensions. We use the heatmap-based visualization to demonstrate temporal trend of CPUs(shown as Figure~\ref{fig:explorer}(D)). We use the color range from yellow to red to encode the CPU usage from 0 to 100$\%$. Another visualization form for the multi-dimensional time-series data is linechart, which can provide more accurate visualization than color encoding when the dimension number is small. But when we use linechart to show the CPU usage(shown as Figure~\ref{fig:explorer}(E)), the lines results in a serious visual clutter which cannot deliver useful information at all. For all the machine metrics, CPU usage and Disk information both contains more than 10 dimensions, which we use heatmap-based visualization. For other metrics such Memory and Network, the number of dimensions is less than five and we use the linechart as the visualization methods. To support the correlation discovery between the patterns in task distribution and system performance metrics, we set the same time scale for both the task distribution view and performance metric view.
+
+ 
 % \begin{itemize}
 %     \item Design consideration. Why gantt doesn't work(need very large space, difficult to show the data-flow link, difficult to show and select the abnormal cases)
 %     \item Our design
@@ -79,12 +103,32 @@ This design has two benefits: 1) we simplify each horizontal bars as dots. Thus 
 % \end{itemize}
 
 
-\subsection{Profiling view}
-\begin{itemize}
-    \item Our design consideration
-    \item Design: Embedding task view to profiling view
-    \item Design: Visualize the profiling results
-\end{itemize}
+\subsection{Task List View}
+
+
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=0.48\textwidth]{figures/visualization/taskList.pdf}
+	\vspace{-3mm}
+	\caption{Visual design for task list.}
+	\label{fig:taskList}
+	\vspace{-3mm}
+\end{figure}
+
+Task list view is developed to enable the detailed exploration at task level. 
+
+\stitle{Visual encoding of tasks}
+Task List View is a list of visualization components to present detail information of the tasks. 
+As shown by Figure~\ref{fig:taskList}.
+
+
+\stitle{Visual encoding of task extension}
+
+%\begin{itemize}
+%    \item Our design consideration
+%    \item Design: Embedding task view to profiling view
+%    \item Design: Visualize the profiling results
+%\end{itemize}
 
 \subsection{Interactions}
 \begin{itemize}
