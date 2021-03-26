@@ -34,7 +34,7 @@ As shown by figure~\ref{fig:progress}, the x-axis indicates the timestamp. The r
 %        \begin{itemize}
 %            \item Gantt(consider the vertical edge, large space, unclear structure)
 %            \item New design loose(clear structure, large space)
-%            \item New design compact(small space, unclear structure)
+%            \item New design compact(small space, unclear structure    )
 %        \end{itemize}
 %\end{itemize}
 
@@ -46,12 +46,24 @@ As shown by figure~\ref{fig:progress}, the x-axis indicates the timestamp. The r
 % --new design loose(clear structure, large space)
 % --new design compact(small space, unclear structure)
 % --new design compact, edge processing(small space, clear structure)
-\subsection{Task view}
-\begin{itemize}
-    \item Design consideration. Why gantt doesn't work(need very large space, difficult to show the data-flow link, difficult to show and select the abnormal cases)
-    \item Our design
-    \item Compare with design alternative (Gantt)
-\end{itemize}
+\subsection{Pattern Explorer}
+
+Pattern Explorer is developed to provide efficient pattern discovery and reasoning at the task-level. This component consists of multiple coordinated views, including Distribution View and Performance View.
+\subsubsection{Distribution View}
+
+The Distribution View is designed to explore the temporal pattern and dependencies of tasks.
+Before our collaboration, the domain experts use Gantt Chart Diagram to display the overall progress of tasks, shown in figure~\ref{**}. 
+However, Gantt Chart Diagram-based methods suffer significant scalability problem in our applications. Hundreds to thousands of tasks are associated with a vertex in our scenario, which requires a very large space to place all the horizontal bars. 
+Moreover, visualizing a large number of bars in this way is difficult for users to compare the absolute length of the tasks due to the lack of alignment~\ref{}, which hinders the users' ability to discover the group-based patterns or identify the abnormal tasks. 
+
+To tackle this issue, we develop a visualization with a square shape of rendering canvas as the basis. As shown in Figure~\ref{**}, the vertical axis(from top to bottom) indicates the start time, and the horizontal axis(from left to right) indicates the end time. This design has two benefits: 1) we simplify each horizontal bar as dots. Thus the tasks can be presented as the point cloud in the canvas. This presentation form may result in the visual clutter caused by the gathering and overlap of points, but can significantly highlight the clusters and outliers, which can help the users to find the task of interest; 2) we linearly map the time range to both horizontal and vertical axis. In this way, the horizontal distance from point to the diagonal line of canvas can be used to represent the duration of the task, which helps the users to compare the task duration. 
+
+According to current 
+% \begin{itemize}
+%     \item Design consideration. Why gantt doesn't work(need very large space, difficult to show the data-flow link, difficult to show and select the abnormal cases)
+%     \item Our design
+%     \item Compare with design alternative (Gantt)
+% \end{itemize}
 
 
 \subsection{Profiling view}
