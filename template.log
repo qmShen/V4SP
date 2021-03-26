@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.16)  25 MAR 2021 21:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.16)  26 MAR 2021 01:50
 entering extended mode
 **./template.tex
 (template.tex
@@ -580,19 +580,28 @@ File: figures/model/datamodel.pdf Graphic file (type pdf)
 Package pdftex.def Info: figures/model/datamodel.pdf  used on input line 16.
 (pdftex.def)             Requested size: 216.26701pt x 99.42647pt.
 ) (sections/visualization.tex [4 <./figures/system/sysdesign.pdf> <./figures/mo
-del/datamodel.pdf>]) (sections/evaluation.tex) (sections/conclusion.tex) (templ
-ate.bbl) [5] (template.aux)
+del/datamodel.pdf>]
+<figures/visualization/progressdesign.pdf, id=470, 574.59064pt x 331.01468pt>
+File: figures/visualization/progressdesign.pdf Graphic file (type pdf)
+<use figures/visualization/progressdesign.pdf>
+Package pdftex.def Info: figures/visualization/progressdesign.pdf  used on inpu
+t line 17.
+(pdftex.def)             Requested size: 205.96634pt x 118.65504pt.
+) (sections/evaluation.tex) (sections/conclusion.tex) (template.bbl [5 <./figur
+es/visualization/progressdesign.pdf>]) [6
+
+] (template.aux)
 Package rerunfilecheck Info: File `template.out' has not changed.
-(rerunfilecheck)             Checksum: 6412038E188FF8D160AD45BC18B3F45D;2706.
+(rerunfilecheck)             Checksum: D6A503B90CAEAE94894F53D5CC187378;2706.
  ) 
 Here is how much of TeX's memory you used:
- 11888 strings out of 479334
- 176099 string characters out of 2866936
- 538486 words of memory out of 3000000
- 28618 multiletter control sequences out of 15000+200000
- 476378 words of font info for 414 fonts, out of 3000000 for 9000
+ 11901 strings out of 479334
+ 176438 string characters out of 2866936
+ 535555 words of memory out of 3000000
+ 28624 multiletter control sequences out of 15000+200000
+ 476494 words of font info for 416 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,8n,74p,1276b,395s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 72i,8n,74p,1276b,463s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX
 /fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1
 /public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfo
@@ -605,9 +614,9 @@ etic/uhvr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/P
 rogram Files/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX/
 fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times
 /utmri8a.pfb>
-Output written on template.pdf (5 pages, 734916 bytes).
+Output written on template.pdf (6 pages, 789002 bytes).
 PDF statistics:
- 532 PDF objects out of 1000 (max. 8388607)
- 60 named destinations out of 1000 (max. 500000)
- 101058 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 550 PDF objects out of 1000 (max. 8388607)
+ 62 named destinations out of 1000 (max. 500000)
+ 101063 words of extra memory for PDF output out of 106986 (max. 10000000)
 

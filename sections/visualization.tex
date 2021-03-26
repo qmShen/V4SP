@@ -7,18 +7,36 @@
 % \subsection{Linkage and interactions}
 
 \section{Visualization design}
-A paragraph to introduce the general design consideration. Overview first, zoom ....
-\subsection{Query progress view}
-\begin{itemize}
-    \item Traditional method: Gantt diagram and design consideration 
-    \item Proposed algorithms, link processing
-    \item Alternative design
-        \begin{itemize}
-            \item Gantt(consider the vertical edge, large space, unclear structure)
-            \item New design loose(clear structure, large space)
-            \item New design compact(small space, unclear structure)
-        \end{itemize}
-\end{itemize}
+Following the data modeling, we present the web-based visual analytics system to support the interactive exploration with four coordinated views. The Execution progress demonstrates the overview about how the query plan are execute(\textbf{T1}), the Task distribution view shows the task distribution and the data dependencies. Integrated with the machine performance metrics, this view is also used for reason the specific patterns of tasks(\textbf{T2} and \textbf{T3}).  Task list provides the detailed information at the task level(\textbf{T2}).  At last, the interaction and linkage are introduced to support the multi-level explorations(\textbf{T4}).
+
+\subsection{Query Progress View}
+
+
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=0.40\textwidth]{figures/visualization/progressdesign.pdf}
+	\vspace{-3mm}
+	\caption{Visual encoding of logic vertex and dependency}
+	\label{fig:progress}
+	\vspace{-3mm}
+\end{figure}
+
+
+Query Progress View is developed to overview the overall progress of query execution and the logic dependencies. 
+The commonly used methods to visualize the progress data is Gantt chart.
+
+As shown by figure~\ref{fig:progress}, the x-axis indicates the timestamp. The rectangles with the same  height indicate the temporal information of logic vertices. Given a vertex $v$, the position of left sides indicates the start time $v.st$ and the duration of $v.d$ is encoded by the length of the rectangle. We use the color to encode the step and the stroke dash style to encode the type of vertex as shown by figure~\ref{fig:progress}.
+
+%\begin{itemize}
+%    \item Traditional method: Gantt diagram and design consideration 
+%    \item Proposed algorithms, link processing
+%    \item Alternative design
+%        \begin{itemize}
+%            \item Gantt(consider the vertical edge, large space, unclear structure)
+%            \item New design loose(clear structure, large space)
+%            \item New design compact(small space, unclear structure)
+%        \end{itemize}
+%\end{itemize}
 
 % -Visual form of Gantt diagram
 % -Our design consideration
