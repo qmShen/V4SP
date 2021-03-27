@@ -14,7 +14,7 @@ Following the data modeling, we present the web-based visual analytics system to
 
 \begin{figure}[t]
 	\centering
-	\includegraphics[width=0.40\textwidth]{figures/visualization/progressdesign.pdf}
+	\includegraphics[width=0.35\textwidth]{figures/visualization/progressdesign.pdf}
 	\vspace{-3mm}
 	\caption{Visual encoding of logic vertex and dependency}
 	\label{fig:progress}
@@ -24,12 +24,18 @@ Following the data modeling, we present the web-based visual analytics system to
 \stitle{Visual encoding}
 Query Progress View is developed to overview the overall progress of query execution and the logic dependencies. 
 
+\subsubsection{Visual Encoding}
+The commonly used method to visualize the progress data is Gantt Chart.
+As shown by Figure~\ref{fig:progress}, the x-axis indicates the timestamp. The rectangles with the same height indicate the temporal information of logic vertices. 
+Given a vertex $v$, the position of the left side indicates the start time $v.st$ and the duration of $v.d$ is encoded by the length of the rectangle. We use the stroke dash to present the type of vertex and use the color to encode the type of steps in a vertex. Moreover, the order of all steps is fixed as shown by Figure~\ref{fig:progress}.
 
-The commonly used methods to visualize the progress data is Gantt chart.
-As shown by figure~\ref{fig:progress}, the x-axis indicates the timestamp. The rectangles with the same  height indicate the temporal information of logic vertices. Given a vertex $v$, the position of left sides indicates the start time $v.st$ and the duration of $v.d$ is encoded by the length of the rectangle. We use the color to encode the step and the stroke dash style to encode the type of vertex as shown by figure~\ref{fig:progress}.
+\subsubsection{Layout Method}
+In Gantt Diagram has been deployed to many progress visualization tools such as Tez UI and Tabula, each progress bar takes up the whole line with horizontal position and length encode start time and durations which is shown as Figure~\ref{fig:layout}(A).
+Vertically, the progress bars are ordered by the start time of the vertex. To present the logic dependencies between vertices, we use curves instead of straight lines to avoid the intersection between the lines and progress bars as much as possible. In this visual design, since the layout doesn't consider the logic dependencies, it always results in a very serious cross between the links and unclear topology structure.
 
-\stitle{Layout methods}
-
+To tackle this problem, we propose a three-step progress to generate the layout and visual form: Graph Reorder
+\stitle{Reorder the vertices}
+First, we reorder the 
 \begin{figure}[t]
 	\centering
 	\includegraphics[width=0.45\textwidth]{figures/visualization/exeprogress.pdf}
@@ -115,14 +121,33 @@ As introduced in section~\ref{sec:systemdesign}, several metrics affecting the q
 	\vspace{-3mm}
 \end{figure}
 
-Task list view is developed to enable the detailed exploration at task level. 
+Task list view is developed to enable the detailed exploration of the individual tasks.
+All the tasks will be listed from the top to the bottom according to the duration, and only the top one hundred tasks are shown by default.There are two visual forms of a task: glyph form and extension form. By default, the task glyph are placed row by row. When the user select the task of interest, the glyph will be extended as the extension form(shown as ~\ref{**}).
 
-\stitle{Visual encoding of tasks}
-Task List View is a list of visualization components to present detail information of the tasks. 
-As shown by Figure~\ref{fig:taskList}.
+\stitle{Task glyph}
+As shown by Figure~\ref{fig:taskList}, the green circle or orange rectangle is placed at the left side of a row, indicating the type of the task. On the right side, a rectangle is shown with the length to encode the relative task duration to the maximum duration for all tasks. In the rectangle, the five steps are shown line by line. We use both the color and the y-position to encode the step type. Moreover, the length of a step can be very close to 0, which makes the current visualization unobservable. To tackle this problem, we place a circle and a triangle at the left and right sides of the rectangle of a step, respectively. Thus, the zero-length step will be marked by the overlap of the two shapes.
+
+\stitle{Task extension} When the user clicks the task, an extension view is displayed below to the task glyph, shown as Figure~\ref{fig:taskList}(\textbf{XX}). There are two sub-components in this view: abnormal component and dependency component. 
 
 
-\stitle{Visual encoding of task extension}
+We first conduct the abnormal detection for the tasks. As suggested by the domain experts, a task is abnormal when its duration is significantly longer than that of other tasks associated with the same vertex and executed on the same machine. Based on these suggestions, we use Tukey Fence~\cite{tukey1977exploratory} to decide if a task is abnormal. With a given set of real integer $S$ and $l \in S$, the 
+anomaly is calculated as follows:
+
+\begin{equation} 
+AB(l, S) = \left \{
+  \begin{aligned}
+    &true, && \text{if}\ l > S.q_3+1.5(S.q_3-S.q_1)\\
+    &false, && \text{otherwise}
+  \end{aligned} \right.
+\end{equation}
+
+Where $S.q_i$ is the $i^{th}$ quartile of set $S$. With the given task and the vertex, we conduct the abnormal detection for the duration of the task and each step. 
+
+After calculation, we design the abnormal component with six rows. With a given vertex $v$ and the task $t$. The top fives row visualize the distribution of the five steps in $v$ as boxplot: the left and right vertical lines indicate the minimum and maximum duration of corresponding steps, and the left and right sides of the rectangle indicate the $1^{st}$ and $3^{st}$ quartiles. We also place a dot over the boxplot to show the duration of task $t$. The last row is implemented to use the same visual form which is used for the presentation of task duration.
+
+The dependency components contains two row of glyphs representing the producer tasks and the consumer tasks respectively. 
+
+
 
 %\begin{itemize}
 %    \item Our design consideration
