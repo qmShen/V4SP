@@ -21,8 +21,48 @@ Following the data modeling, we present the web-based visual analytics system to
 	\vspace{-3mm}
 \end{figure}
 
-\stitle{Visual encoding}
 Query Progress View is developed to overview the overall progress of query execution and the logic dependencies. 
+
+\begin{algorithm}
+	\caption{$\mathsf{TDAGLayout}$($R$, $canvas$)}
+	\label{alg:TDAGLayout}
+	\begin{algorithmic}[1]
+		\For {$root$ in $R$}
+		\State$\mathsf{process}$($root$, $canvas$)
+		\EndFor
+	\end{algorithmic}
+
+\end{algorithm}
+
+\begin{algorithm}
+	\caption{$\mathsf{process}$($v$, $canvas$)}
+	\label{alg:process}
+	\begin{algorithmic}[1]
+		\If{$v.visit = True$}
+			\State Do Nothing
+		\EndIf
+		\If{$v.children$ is empty}
+			\If{$\mathsf{place}$($v$)$ = true $}
+				\State $canvas.height \leftarrow canvas.height + uh$
+				\State $\mathsf{place}$($v$)
+			\EndIf
+		\Else
+			\For {$c$ in $v.children$}
+				\State $\mathsf{process}$($c$)
+				\If{$\mathsf{place}$($v$)$ = true$}
+					\State $v.visit \leftarrow True$
+				\EndIf
+			\EndFor
+			\If{$v.visit = True$}
+				\State $canvas.height \leftarrow canvas.height + uh$
+				\State $\mathsf{place}$($v$)
+			\EndIf
+		\EndIf
+	\end{algorithmic}
+\end{algorithm}
+
+
+
 
 \subsubsection{Visual Encoding}
 The commonly used method to visualize the progress data is Gantt Chart.
@@ -30,12 +70,14 @@ As shown by Figure~\ref{fig:progress}, the x-axis indicates the timestamp. The r
 Given a vertex $v$, the position of the left side indicates the start time $v.st$ and the duration of $v.d$ is encoded by the length of the rectangle. We use the stroke dash to present the type of vertex and use the color to encode the type of steps in a vertex. Moreover, the order of all steps is fixed as shown by Figure~\ref{fig:progress}.
 
 \subsubsection{Layout Method}
-In Gantt Diagram has been deployed to many progress visualization tools such as Tez UI and Tabula, each progress bar takes up the whole line with horizontal position and length encode start time and durations which is shown as Figure~\ref{fig:layout}(A).
-Vertically, the progress bars are ordered by the start time of the vertex. To present the logic dependencies between vertices, we use curves instead of straight lines to avoid the intersection between the lines and progress bars as much as possible. In this visual design, since the layout doesn't consider the logic dependencies, it always results in a very serious cross between the links and unclear topology structure.
+In Gantt Diagram has been deployed to many progress visualization tools such as Tez UI and Tabula, each progress bar takes up the whole line with its left side and length encode the start time and duration, which is shown as Figure~\ref{fig:layout}(A).
+Vertically, the progress bars are ordered by the start time of the vertex. In this visual design, since the layout doesn't consider the logic dependencies, it always results in a very serious cross between the links and unclear topology structure.
 
-To tackle this problem, we propose a three-step progress to generate the layout and visual form: Graph Reorder
-\stitle{Reorder the vertices}
-First, we reorder the 
+To tackle this problem, we design an algorithm~\ref{alg:TDAGLayout} to layout the TDAG. With an edge $e=\{u,v\}$, we define $u$ as the child of $v$ and $v$ as the parent of $u$. Moreover, we define the $root$ as the vertex which has no parents. $\mathsf{process}$ is described as Algorithm~\ref{alg:process}, which use a in-order traversal to process the vertices in the graph.  $\mathsf{place}$ is the function which tries to place the vertex in the canvas. At first, we use a naive which provides a vertex an exclusive row, which is shown as Figure~\ref{fig:layout}(B). The new layout shows a clear topology structure because the brother vertices are visited closely. However, this methods also results in a poorly using of the canvas, since some vertices can be put at the same row.  
+To provide a tight layout, we revise the method $\mathsf{place}$ which tries to place the vertex at the top position of the canvas, if the vertex is overlaped with the existing vertex, then move this vertex down the distance of the vertex height. If the $\mathsf{place}$ cannot find a place for the vertex in the canvas, the $\mathsf{place}$ will return $False$ indicating the height of canvas is not enough, otherwise return $True$. Each parent vertex will be visited multiple times until it is successfully placed into the canvas(shown as line 10 to line 14). The result(Figure~\ref{fig:layout}(B)) shows a layout which requires a smaller canvas.
+
+The tight layout further results in an unclear structure of the dependencies. We further optimized it by changing the position of the control points of B-splines. With two different source vertex, the x-position of the control points are different, thus making the lines from different source vertices are attracted to different position. The results is shown as Figure~\ref{fig:layout}(D).
+
 \begin{figure}[t]
 	\centering
 	\includegraphics[width=0.45\textwidth]{figures/visualization/exeprogress.pdf}
@@ -124,14 +166,15 @@ As introduced in section~\ref{sec:systemdesign}, several metrics affecting the q
 Task list view is developed to enable the detailed exploration of the individual tasks.
 All the tasks will be listed from the top to the bottom according to the duration, and only the top one hundred tasks are shown by default.There are two visual forms of a task: glyph form and extension form. By default, the task glyph are placed row by row. When the user select the task of interest, the glyph will be extended as the extension form(shown as ~\ref{**}).
 
-\stitle{Task glyph}
+
+\subsubsection{Task glyph}
 As shown by Figure~\ref{fig:taskList}, the green circle or orange rectangle is placed at the left side of a row, indicating the type of the task. On the right side, a rectangle is shown with the length to encode the relative task duration to the maximum duration for all tasks. In the rectangle, the five steps are shown line by line. We use both the color and the y-position to encode the step type. Moreover, the length of a step can be very close to 0, which makes the current visualization unobservable. To tackle this problem, we place a circle and a triangle at the left and right sides of the rectangle of a step, respectively. Thus, the zero-length step will be marked by the overlap of the two shapes.
 
-\stitle{Task extension} When the user clicks the task, an extension view is displayed below to the task glyph, shown as Figure~\ref{fig:taskList}(\textbf{XX}). There are two sub-components in this view: abnormal component and dependency component. 
+\subsubsection{Extension View}
+When the user clicks the task, an extension view is displayed below to the task glyph, shown as Figure~\ref{fig:taskList}(\textbf{XX}). There are two sub-components in this view: abnormal component and dependency component. 
 
 
-We first conduct the abnormal detection for the tasks. As suggested by the domain experts, a task is abnormal when its duration is significantly longer than that of other tasks associated with the same vertex and executed on the same machine. Based on these suggestions, we use Tukey Fence~\cite{tukey1977exploratory} to decide if a task is abnormal. With a given set of real integer $S$ and $l \in S$, the 
-anomaly is calculated as follows:
+We first conduct the abnormal detection for the tasks. As suggested by the domain experts, a task is abnormal when its duration is significantly longer than that of other tasks associated with the same vertex and executed on the same machine. Based on these suggestions, we use Tukey Fence~\cite{tukey1977exploratory} to decide if a task is abnormal. With a given set of real integer $S$ and $l \in S$, the anomaly is calculated as follows:
 
 \begin{equation} 
 AB(l, S) = \left \{
@@ -145,7 +188,8 @@ Where $S.q_i$ is the $i^{th}$ quartile of set $S$. With the given task and the v
 
 After calculation, we design the abnormal component with six rows. With a given vertex $v$ and the task $t$. The top fives row visualize the distribution of the five steps in $v$ as boxplot: the left and right vertical lines indicate the minimum and maximum duration of corresponding steps, and the left and right sides of the rectangle indicate the $1^{st}$ and $3^{st}$ quartiles. We also place a dot over the boxplot to show the duration of task $t$. The last row is implemented to use the same visual form which is used for the presentation of task duration.
 
-The dependency components contains two row of glyphs representing the producer tasks and the consumer tasks respectively. 
+The dependency components consists two rows representing the producer tasks and the consumer tasks respectively. With a given task, the number of its consumer tasks and producer tasks may reach thousands of tasks. Considering the scalability issues, we use the pixel barchart~\cite{keim2002pixel} to visualize data amount of dependencies. For example, as shown in Figure~\ref{fig:explorer}{(XX)}, we vertically divide the dependency component into segments to present the machines. 
+The consumer tasks or producer tasks are visualized as the pixels in machine box execute this task, the position of task is decided by the data size transmit between the tasks, which is layouted from left to right and from top to bottom. The color is also used to encode the data size. 
 
 
 
@@ -156,7 +200,15 @@ The dependency components contains two row of glyphs representing the producer t
 %\end{itemize}
 
 \subsection{Interactions}
-\begin{itemize}
-    \item Multi-scale navigation
-    \item Inner and inter linking
-\end{itemize}
+To facilitate the interactive exploration, out system supports the cross-view interactions. 
+In summary, there are two categories of interactions are implemented in the system: cross-level interactions and temporal linkage.
+
+\stitle{Cross-level and -view interactions}:
+Our system supports linking among visual elements related to the same task. 
+For example, when hovering the mouse on the task of Task View, the corresponding dots of this task and the data dependencies at the machine view will be highlighted by changing the color to purple. Moreover, the progress bar of vertex associated with the task will also be highlighted by change the stroke width.   
+
+\stitle{Temporal linkage}
+In both machine view and progress view allow, users can select the time range to narrow down to the pattern of interest. When select time range at any view, the time focus of other views will be updated. 
+%    \item Multi-scale navigation
+%    \item Inner and inter linking
+%\end{itemize}

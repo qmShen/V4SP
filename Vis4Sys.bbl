@@ -1,0 +1,185 @@
+\begin{thebibliography}{10}
+
+\bibitem{cappers2017exploring}
+B.~C. Cappers and J.~J. van Wijk.
+\newblock Exploring multivariate event sequences using rules, aggregations, and
+  selections.
+\newblock {\em IEEE transactions on visualization and computer graphics},
+  24(1):532--541, 2017.
+
+\bibitem{carbone2015apache}
+P.~Carbone, A.~Katsifodimos, S.~Ewen, V.~Markl, S.~Haridi, and K.~Tzoumas.
+\newblock Apache flink: Stream and batch processing in a single engine.
+\newblock {\em Bulletin of the IEEE Computer Society Technical Committee on
+  Data Engineering}, 36(4), 2015.
+
+\bibitem{chen2015peakvizor}
+Q.~Chen, Y.~Chen, D.~Liu, C.~Shi, Y.~Wu, and H.~Qu.
+\newblock Peakvizor: Visual analytics of peaks in video clickstreams from
+  massive open online courses.
+\newblock {\em IEEE transactions on visualization and computer graphics},
+  22(10):2315--2330, 2015.
+
+\bibitem{chen2018viseq}
+Q.~Chen, X.~Yue, X.~Plantaz, Y.~Chen, C.~Shi, T.-C. Pong, and H.~Qu.
+\newblock Viseq: Visual analytics of learning sequence in massive open online
+  courses.
+\newblock {\em IEEE transactions on visualization and computer graphics},
+  26(3):1622--1636, 2018.
+
+\bibitem{hadoop}
+A.~S. Foundation.
+\newblock The apache hadoop project.
+
+\bibitem{tez-ui}
+A.~S. Foundation.
+\newblock Tez ui.
+
+\bibitem{gathani2020debugging}
+S.~Gathani, P.~Lim, and L.~Battle.
+\newblock Debugging database queries: A survey of tools, techniques, and users.
+\newblock In {\em Proceedings of the 2020 CHI Conference on Human Factors in
+  Computing Systems}, pp. 1--16, 2020.
+
+\bibitem{gotz2019visual}
+D.~Gotz, J.~Zhang, W.~Wang, J.~Shrestha, and D.~Borland.
+\newblock Visual analysis of high-dimensional event sequence data via dynamic
+  hierarchical aggregation.
+\newblock {\em IEEE transactions on visualization and computer graphics},
+  26(1):440--450, 2019.
+
+\bibitem{goulden2019ccvis}
+M.~C. Goulden, E.~Gronda, Y.~Yang, Z.~Zhang, J.~Tao, C.~Wang, X.~Duan, G.~A.
+  Ambrose, K.~Abbott, and P.~Miller.
+\newblock Ccvis: Visual analytics of student online learning behaviors using
+  course clickstream data.
+\newblock {\em Electronic Imaging}, 2019(1):681--1, 2019.
+
+\bibitem{guo2020survey}
+Y.~Guo, S.~Guo, Z.~Jin, S.~Kaul, D.~Gotz, and N.~Cao.
+\newblock Survey on visual analysis of event sequence data.
+\newblock {\em arXiv preprint arXiv:2006.14291}, 2020.
+
+\bibitem{he2019vuc}
+H.~He, B.~Dong, Q.~Zheng, and G.~Li.
+\newblock Vuc: Visualizing daily video utilization to promote student
+  engagement in online distance education.
+\newblock In {\em Proceedings of the ACM Conference on Global Computing
+  Education}, pp. 99--105, 2019.
+
+\bibitem{jo2014livegantt}
+J.~Jo, J.~Huh, J.~Park, B.~Kim, and J.~Seo.
+\newblock Livegantt: Interactively visualizing a large manufacturing schedule.
+\newblock {\em IEEE transactions on visualization and computer graphics},
+  20(12):2329--2338, 2014.
+
+\bibitem{keim2002pixel}
+D.~A. Keim, M.~C. Hao, U.~Dayal, and M.~Hsu.
+\newblock Pixel bar charts: a visualization technique for very large
+  multi-attribute data sets.
+\newblock {\em Information Visualization}, 1(1):20--34, 2002.
+
+\bibitem{law2018maqui}
+P.-M. Law, Z.~Liu, S.~Malik, and R.~C. Basole.
+\newblock Maqui: Interweaving queries and pattern mining for recursive event
+  sequence exploration.
+\newblock {\em IEEE transactions on visualization and computer graphics},
+  25(1):396--406, 2018.
+
+\bibitem{malik2015cohort}
+S.~Malik, F.~Du, M.~Monroe, E.~Onukwugha, C.~Plaisant, and B.~Shneiderman.
+\newblock Cohort comparison of event sequences with balanced integration of
+  visual analytics and statistics.
+\newblock In {\em Proceedings of the 20th International Conference on
+  Intelligent User Interfaces}, pp. 38--49, 2015.
+
+\bibitem{malik2016high}
+S.~Malik, B.~Shneiderman, F.~Du, C.~Plaisant, and M.~Bjarnadottir.
+\newblock High-volume hypothesis testing: Systematic exploration of event
+  sequence comparisons.
+\newblock {\em ACM Transactions on Interactive Intelligent Systems (TiiS)},
+  6(1):1--23, 2016.
+
+\bibitem{moritz2015perfopticon}
+D.~Moritz, D.~Halperin, B.~Howe, and J.~Heer.
+\newblock Perfopticon: Visual query analysis for distributed databases.
+\newblock In {\em Computer Graphics Forum}, vol.~34, pp. 71--80. Wiley Online
+  Library, 2015.
+
+\bibitem{mu2019moocad}
+X.~Mu, K.~Xu, Q.~Chen, F.~Du, Y.~Wang, and H.~Qu.
+\newblock Moocad: Visual analysis of anomalous learning activities in massive
+  open online courses.
+\newblock In {\em EuroVis (Short Papers)}, pp. 91--95, 2019.
+
+\bibitem{plaisant1996lifelines}
+C.~Plaisant, B.~Milash, A.~Rose, S.~Widoff, and B.~Shneiderman.
+\newblock Lifelines: visualizing personal histories.
+\newblock In {\em Proceedings of the SIGCHI conference on Human factors in
+  computing systems}, pp. 221--227, 1996.
+
+\bibitem{riehmann2005interactive}
+P.~Riehmann, M.~Hanfler, and B.~Froehlich.
+\newblock Interactive sankey diagrams.
+\newblock In {\em IEEE Symposium on Information Visualization, 2005. INFOVIS
+  2005.}, pp. 233--240. IEEE, 2005.
+
+\bibitem{shneiderman2003eyes}
+B.~Shneiderman.
+\newblock The eyes have it: A task by data type taxonomy for information
+  visualizations.
+\newblock In {\em The craft of information visualization}, pp. 364--371.
+  Elsevier, 2003.
+
+\bibitem{silva2000visualization}
+S.~F. Silva and T.~Catarci.
+\newblock Visualization of linear time-oriented data: a survey.
+\newblock In {\em Proceedings of the first international conference on web
+  information systems engineering}, vol.~1, pp. 310--319. IEEE, 2000.
+
+\bibitem{simitsis2014vqa}
+A.~Simitsis, K.~Wilkinson, J.~Blais, and J.~Walsh.
+\newblock Vqa: vertica query analyzer.
+\newblock In {\em Proceedings of the 2014 ACM SIGMOD international conference
+  on Management of data}, pp. 701--704, 2014.
+
+\bibitem{tukey1977exploratory}
+J.~W. Tukey et~al.
+\newblock {\em Exploratory data analysis}, vol.~2.
+\newblock Reading, Mass., 1977.
+
+\bibitem{wongsuphasawat2011outflow}
+K.~Wongsuphasawat and D.~Gotz.
+\newblock Outflow: Visualizing patient flow by symptoms and outcome.
+\newblock In {\em IEEE VisWeek Workshop on Visual Analytics in Healthcare,
+  Providence, Rhode Island, USA}, pp. 25--28. American Medical Informatics
+  Association, 2011.
+
+\bibitem{wongsuphasawat2011lifeflow}
+K.~Wongsuphasawat, J.~A. Guerra~G{\'o}mez, C.~Plaisant, T.~D. Wang,
+  M.~Taieb-Maimon, and B.~Shneiderman.
+\newblock Lifeflow: visualizing an overview of event sequences.
+\newblock In {\em Proceedings of the SIGCHI conference on human factors in
+  computing systems}, pp. 1747--1756, 2011.
+
+\bibitem{wu2020visual}
+J.~Wu, Z.~Guo, Z.~Wang, Q.~Xu, and Y.~Wu.
+\newblock Visual analytics of multivariate event sequence data in racquet
+  sports.
+\newblock In {\em 2020 IEEE Conference on Visual Analytics Science and
+  Technology (VAST)}, pp. 36--47. IEEE, 2020.
+
+\bibitem{zhao2014fluxflow}
+J.~Zhao, N.~Cao, Z.~Wen, Y.~Song, Y.-R. Lin, and C.~Collins.
+\newblock \# fluxflow: Visual analysis of anomalous information spreading on
+  social media.
+\newblock {\em IEEE transactions on visualization and computer graphics},
+  20(12):1773--1782, 2014.
+
+\bibitem{zhao2015matrixwave}
+J.~Zhao, Z.~Liu, M.~Dontcheva, A.~Hertzmann, and A.~Wilson.
+\newblock Matrixwave: Visual comparison of event sequence data.
+\newblock In {\em Proceedings of the 33rd Annual ACM Conference on Human
+  Factors in Computing Systems}, pp. 259--268, 2015.
+
+\end{thebibliography}

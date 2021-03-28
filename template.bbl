@@ -73,6 +73,12 @@ J.~Jo, J.~Huh, J.~Park, B.~Kim, and J.~Seo.
 \newblock {\em IEEE transactions on visualization and computer graphics},
   20(12):2329--2338, 2014.
 
+\bibitem{keim2002pixel}
+D.~A. Keim, M.~C. Hao, U.~Dayal, and M.~Hsu.
+\newblock Pixel bar charts: a visualization technique for very large
+  multi-attribute data sets.
+\newblock {\em Information Visualization}, 1(1):20--34, 2002.
+
 \bibitem{law2018maqui}
 P.-M. Law, Z.~Liu, S.~Malik, and R.~C. Basole.
 \newblock Maqui: Interweaving queries and pattern mining for recursive event
@@ -118,6 +124,13 @@ P.~Riehmann, M.~Hanfler, and B.~Froehlich.
 \newblock In {\em IEEE Symposium on Information Visualization, 2005. INFOVIS
   2005.}, pp. 233--240. IEEE, 2005.
 
+\bibitem{shneiderman2003eyes}
+B.~Shneiderman.
+\newblock The eyes have it: A task by data type taxonomy for information
+  visualizations.
+\newblock In {\em The craft of information visualization}, pp. 364--371.
+  Elsevier, 2003.
+
 \bibitem{silva2000visualization}
 S.~F. Silva and T.~Catarci.
 \newblock Visualization of linear time-oriented data: a survey.
@@ -129,6 +142,11 @@ A.~Simitsis, K.~Wilkinson, J.~Blais, and J.~Walsh.
 \newblock Vqa: vertica query analyzer.
 \newblock In {\em Proceedings of the 2014 ACM SIGMOD international conference
   on Management of data}, pp. 701--704, 2014.
+
+\bibitem{tukey1977exploratory}
+J.~W. Tukey et~al.
+\newblock {\em Exploratory data analysis}, vol.~2.
+\newblock Reading, Mass., 1977.
 
 \bibitem{wongsuphasawat2011outflow}
 K.~Wongsuphasawat and D.~Gotz.

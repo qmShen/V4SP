@@ -1,0 +1,75 @@
+%The distributed database system is becoming increasingly pervasive due to the explosive growth of data in science, industrial, life, etc. Meanwhile, many tools such as Hadoop~\cite{hadoop}, Flink~\cite{carbone2015apache}, Myria and Vertical are developed to facilitate the query execution procedure including optimizing the query, translating traditional query language to logic execution plan, generating and dispatching tasks to clusters to perform the data acquisition in parallel.
+
+
+%To maximally leverage the distributed systems, it is crucial for users to understand and evaluate how the query runs across the clusters. The frequently asked questions include "Where does the time go?", "What is the bottleneck of my query?", "Can we improve the performance of the specific query?".  Many research work devoted to evaluating and improving the performance of data analytic frameworks, but most of them try to reveal the performance by making high-level statistics about the correlated metrics collected from the execution logs or experiment conducted on benchmarks, which cannot be used for the understanding of the special case and provide the details answer for these questions case by case. 
+
+
+Distributed database systems are becoming increasingly pervasive due to the need to handle large-scale data in various domains such as finance, e-commerce and science. Many such systems have been developed, including Hadoop~\cite{hadoop}, Flink~\cite{carbone2015apache}, Myriak~\cite{} and Vertical~\cite{}, which support specifying queries using high-level languages such as SQL. A query is typically executed by first translating its high-level specification into an optimized logical execution plan, and then spawning parallel tasks across the machines in the cluster to execute the logical plan. For trouble shooting and performance optimization, users of distributed database systems need to analyze and understand how queries are executed   
+
+The users of distributed database systems need to analyze and understand how queries are executed across a cluster for trouble shooting and performance optimization.  
+
+
+Frequently asked questions include "Where does the query execution time go?", "What is the bottleneck of my query?", "How can I improve the performance of a specific query?".    
+
+
+
+
+
+%Understanding query logic and execution in the distributed environment is challenging. Three stages are involved for human-beings to understand a database query comprehensively: 1) understand the query logic, 2) understand the execution plan structure, and 3) understand the plan execution procedure.
+%Understand the query logic itself is long studied direction, especially when the queries are becoming increasing deep and nested.
+%With the pervasive of distributed database system, visual explaining of distributed execution plan structure is studied. These methods transform the abstract execution plan with thousands of lines of description to intuitive diagrams such as tree or graph and design interactions allowing users to interactively explore the nested structures.
+%In our paper, we mainly focus on the stage 3) i.e. understand the execution procedure of query execution.There are three challenges to facilitate the fine-grained analysis of query executions.
+
+
+Many works have tried to understand query execution in databases and they focus on three different views: (i) the query logic, (ii) the execution plan and (iii) the query execution process. Understanding the query logic has been well-studied and there are established methods even when queries are deep and nested. Works on execution plan understanding typically translate an execution plan specification (can contains up to thousands of lines) into intuitive diagrams (such as tree or graph) for easy comprehension and provide designs that allow users to interactively explore the execution plans. However, there are relatively fewer works on understanding the query execution process, which is more challenging than understanding query logic and execution plan for the 3 reasons.      
+
+
+%\stitle{Large number of atom tasks}
+%When issuing the execution plan on the distributed database system, large number of atomic tasks will be generated and executed on the nodes in the cluster in parallel. The duration of tasks may be significant different from each other even executed on the same server. Identifying the unnature long cases and analyzing their performance from the large amount of tasks is challenges, since it is difficult to define clear ground truth to fits all cases.
+%
+%\stitle{Complex dependencies among the tasks}
+%The processing of a task always depends on several prerequisite tasks which provide the necessary input data. Analyzing the complex many to many dependencies and identifying the trace of interested are difficult in the large task set.
+%
+%\stitle{Unpredicted behavior of distributed system} also increases he difficulty to understand the model execution procedure. For instance, the developer find that the same query execution plan run today may be different from that of yesterday. In general, four aspects are considered to affect the performance of clusters: CPU usage, memory usage, network IO and disk status. Existing work studies try to reveal how these metrics related to the system performance or quantify the impact and significance of these features. These studies are conducted based on the observed performance data from the experiment or logs collected from the production environment. One work inspired us is 
+%QVA which tries to linkage the resources status to query performance and resource usages. However, these work fail to provide the fine-grained execution traces for users to inspect the reasons of model behavior.
+
+
+\stitle{A larger number of atom tasks} In distributed database systems, a query usually invokes many parallel atom tasks (e.g., xxx) on the machines in cluster. These tasks may have significant differences in their computation complexity, data access pattern, resource requirement and consequently execution time. Therefore, long running tasks are not necessarily anomalies, and thus it is challenging to pinpoint suspicious tasks from a large number of tasks for human inspection.        
+
+
+\stitle{Complex dependencies among the tasks} There are data dependencies among the atom tasks of a query as an atom task may take the outputs of one or more tasks as inputs. The dependencies  can be highly complex considering the large number of atom tasks and different types of interactions (e.g., synchronous or asynchronous) among them. As a result, an abnormal task may not be caused by its own problems and users should be able to trace back the tasks dependencies to identify the root causes.  
+
+
+
+\stitle{Complicated system influences} System statuses such as network speed, memory capacity and CPU load also play a key role in the execution of atom tasks. Different tasks have different resource requirements, e.g., some are network-bound, some are computation-bound and some require large memory, which that means different resources may influence them in different ways. In addition, tasks on the same machine may contend for resources and there may be load imbalance among the machines. These complexities make it difficult to correlate task execution with system performance and identify the system causes of execution problems.     
+
+
+Existing works on understanding the query execution process are inadequate as they focus on the high-level statistics of query execution. For example, xxx and xxx. However, we observe that for many real-world use cases (e.g., query reformulation, query performance optimization, system problem identification), it is necessary to track the fine-grained query execution process at the atom task level and correlate atom task execution with both the data dependencies in the query plan and the statuses of the underlying system.           
+
+
+% There are three challenges to facilitate the fine-grained inspection of query executions. 
+% \textbf{Non-transparent translation} makes it difficult for database users to inspect the query behaviors for a given abstract query. As shown by Figure**, the query issued by users is highly abstract which hides the detailed executed logic on a distributed system. The tools such as Hive can translate the query to a physical execution plan as shown by Figure~\ref{fig:exec_plan}. The execution plans have hundreds to thousands of lines of description, which is difficult for users to build a mental map for the overall execution plan. Existing work tries to bridge the gap between the execution logic and human perception by visualizing the execution plan as directed acyclic graph and allow users to interactively narrow down to any detailed operator as demand. However, the visualization of execution plan is always independent from the visualization of execution process. During the exploration, the users have to switch between multiple views which break the continuity of the plan-execution analysis.
+% \textbf{Unexpected behavior of distributed system} also increases he difficulty to understand the model execution process. For instance, the developer find that the same query execution plan run today may be different from that of yesterday. In general, four aspects are considered to affect the performance of clusters: CPU usage, memory usage, network IO and disk status. Existing work studies try to reveal how these metrics related to the system performance or quantify the impact and significance of these features. These studies are conducted based on the observed performance data from the experiment or logs collected from the production environment. One work inspired us is $\DQV$ which tries to linkage the resources status to query performance and resource usages. However, these work fail to provide the fine-grained execution traces for users to inspect the reasons of model behavior.
+
+%In this work, we develop a visual analytics system called $\DQV$ (Figure~\ref{fig:teaser}) for database users to understand and diagnose query behavior on the distributed database. The design of $\DQV$ follows the visualization Mantra "overview first, zoom and filter, details on demand"~\cite{shneiderman2003eyes}.  The system consists of three coordinated views and a suite of interactions to support the interactive query execution analysis at a multi-level of details. To demonstrate the query execution overview, we design an optimized algorithm to layout the temporal directed acyclic graph(TDAG), which takes both the temporal information and the topology information into consideration. To explore tasks set and their data dependencies, we implement the machine view integrating the task distribution components and machine performance components for users to analyze the interaction between tasks and distributed system. At last, the task view is designed to show  detailed information about the individual tasks. 
+%The system can run with two modes: 1) analysis mode: the system directly shows the final results for exploration; 2) simulation mode: the system replays the execution process with a given simulation rate.
+
+
+In this work, we develop a visual analytics system called $\DQV$ (Figure~\ref{fig:teaser}) to facilitate distributed database users in understanding and diagnosing the query execution process. We follow the visualization Mantra "overview first, zoom and filter, details on demand"~\cite{shneiderman2003eyes} when designing $\DQV$. $\DQV$ consists of three coordinated views and a suite of interactions to support the interactive analysis of query execution with different levels of details. To show the overall query execution progress, we design a tailored algorithm to layout the temporal directed acyclic graph (TDAG), which takes both the temporal information and the topology information into consideration. To show that detailed information about individual tasks and their dependencies, we provide the task view, which allows to easily identify abnormal tasks. To correlate task execution with system status, we provide the machine view, which integrate task performance and distribution with system performance statics.\textit{ How do the three views interact?}
+$\DQV$ can run with two modes: 1) analysis mode: the system directly shows the final results for exploration; 2) simulation mode: the system replays the execution process with a given simulation rate.
+
+\textit{Case studies; summary of domain experts interview}
+
+Our contributions in this works can be summarized as follows:
+\begin{itemize}
+	\item We identify the requirements and functionalities of a visualization system for understanding query execution in distributed database systems through extensive discussions with domain experts.   
+	\item We design the $\DQV$ system, which can visualize the overall execution progress of distributed queries, show task dependencies and allow effective identification of abnormal tasks, and support correlating task execution with system statuses.
+	\item We conduct comprehensive case studies using $\DQV$ to analyze Hive queries, which shows its applications in xxx, xxx and xxx.
+\end{itemize}
+
+
+%\begin{itemize}
+%\item The design and implementation of $\DQV$, a visual analytic system for understanding and analyzing the distributed query execution process.
+%\item Well-established visualization front-end including the algorithm to layout for visualizing the TDAG, novel visualization design to demonstrate the large number of tasks and their complex dependencies.
+%\item Case studies on the analysis of query process performed on the Hadoop platform.
+%\end{itemize}

@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Vis4Sys.aux
+Reallocating 'name_of_file' (item size: 1) to 10 items.
+The style file: abbrv-doi.bst
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Database file #1: template.bib
+Warning--can't use both volume and number fields in moritz2015perfopticon
+You've used 29 entries,
+            2598 wiz_defined-function locations,
+            759 strings with 10512 characters,
+and the built_in function-call counts, 12900 in all, are:
+= -- 1249
+> -- 714
+< -- 17
++ -- 283
+- -- 252
+* -- 956
+:= -- 2036
+add.period$ -- 91
+call.type$ -- 29
+change.case$ -- 211
+chr.to.int$ -- 0
+cite$ -- 30
+duplicate$ -- 465
+empty$ -- 957
+format.name$ -- 252
+if$ -- 2749
+int.to.chr$ -- 0
+int.to.str$ -- 29
+missing$ -- 28
+newline$ -- 146
+num.names$ -- 58
+pop$ -- 240
+preamble$ -- 1
+purify$ -- 183
+quote$ -- 0
+skip$ -- 365
+stack$ -- 0
+substring$ -- 798
+swap$ -- 158
+text.length$ -- 17
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 114
+warning$ -- 1
+while$ -- 120
+width$ -- 31
+write$ -- 320
+(There was 1 warning)
