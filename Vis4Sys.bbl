@@ -1,5 +1,12 @@
 \begin{thebibliography}{10}
 
+\bibitem{abouzied2012dataplay}
+A.~Abouzied, J.~Hellerstein, and A.~Silberschatz.
+\newblock Dataplay: interactive tweaking and example-driven correction of
+  graphical database queries.
+\newblock In {\em Proceedings of the 25th annual ACM symposium on User
+  interface software and technology}, pp. 207--218, 2012.
+
 \bibitem{cappers2017exploring}
 B.~C. Cappers and J.~J. van Wijk.
 \newblock Exploring multivariate event sequences using rules, aggregations, and
@@ -12,6 +19,13 @@ P.~Carbone, A.~Katsifodimos, S.~Ewen, V.~Markl, S.~Haridi, and K.~Tzoumas.
 \newblock Apache flink: Stream and batch processing in a single engine.
 \newblock {\em Bulletin of the IEEE Computer Society Technical Committee on
   Data Engineering}, 36(4), 2015.
+
+\bibitem{cerullo2007system}
+C.~Cerullo and M.~Porta.
+\newblock A system for database visual querying and query visualization:
+  Complementing text and graphics to increase expressiveness.
+\newblock In {\em 18th International Workshop on Database and Expert Systems
+  Applications (DEXA 2007)}, pp. 109--113. IEEE, 2007.
 
 \bibitem{chen2015peakvizor}
 Q.~Chen, Y.~Chen, D.~Liu, C.~Shi, Y.~Wu, and H.~Qu.
@@ -27,6 +41,17 @@ Q.~Chen, X.~Yue, X.~Plantaz, Y.~Chen, C.~Shi, T.-C. Pong, and H.~Qu.
 \newblock {\em IEEE transactions on visualization and computer graphics},
   26(3):1622--1636, 2018.
 
+\bibitem{clark1922gantt}
+W.~Clark.
+\newblock {\em The Gantt chart: A working tool of management}.
+\newblock Ronald Press Company, 1922.
+
+\bibitem{danaparamita2011queryviz}
+J.~Danaparamita and W.~Gatterbauer.
+\newblock Queryviz: helping users understand sql queries and their patterns.
+\newblock In {\em Proceedings of the 14th International Conference on Extending
+  Database Technology}, pp. 558--561, 2011.
+
 \bibitem{hadoop}
 A.~S. Foundation.
 \newblock The apache hadoop project.
@@ -40,6 +65,17 @@ S.~Gathani, P.~Lim, and L.~Battle.
 \newblock Debugging database queries: A survey of tools, techniques, and users.
 \newblock In {\em Proceedings of the 2020 CHI Conference on Human Factors in
   Computing Systems}, pp. 1--16, 2020.
+
+\bibitem{gatterbauer2011databases}
+W.~Gatterbauer.
+\newblock Databases will visualize queries too.
+\newblock {\em Proceedings of the VLDB Endowment}, 4(12):1498--1501, 2011.
+
+\bibitem{gawade2012stethoscope}
+M.~Gawade and M.~Kersten.
+\newblock Stethoscope: a platform for interactive visual analysis of query
+  execution plans.
+\newblock {\em Proceedings of the VLDB Endowment}, 5(12):1926--1929, 2012.
 
 \bibitem{gotz2019visual}
 D.~Gotz, J.~Zhang, W.~Wang, J.~Shrestha, and D.~Borland.
@@ -60,12 +96,25 @@ Y.~Guo, S.~Guo, Z.~Jin, S.~Kaul, D.~Gotz, and N.~Cao.
 \newblock Survey on visual analysis of event sequence data.
 \newblock {\em arXiv preprint arXiv:2006.14291}, 2020.
 
+\bibitem{halperin2014demonstration}
+D.~Halperin, V.~Teixeira~de Almeida, L.~L. Choo, S.~Chu, P.~Koutris, D.~Moritz,
+  J.~Ortiz, V.~Ruamviboonsuk, J.~Wang, A.~Whitaker, et~al.
+\newblock Demonstration of the myria big data management service.
+\newblock In {\em Proceedings of the 2014 ACM SIGMOD international conference
+  on Management of data}, pp. 881--884, 2014.
+
 \bibitem{he2019vuc}
 H.~He, B.~Dong, Q.~Zheng, and G.~Li.
 \newblock Vuc: Visualizing daily video utilization to promote student
   engagement in online distance education.
 \newblock In {\em Proceedings of the ACM Conference on Global Computing
   Education}, pp. 99--105, 2019.
+
+\bibitem{jaakkola2003visual}
+H.~Jaakkola and B.~Thalheim.
+\newblock Visual sql--high-quality er-based query treatment.
+\newblock In {\em International Conference on Conceptual Modeling}, pp.
+  129--139. Springer, 2003.
 
 \bibitem{jo2014livegantt}
 J.~Jo, J.~Huh, J.~Park, B.~Kim, and J.~Seo.
@@ -79,12 +128,26 @@ D.~A. Keim, M.~C. Hao, U.~Dayal, and M.~Hsu.
   multi-attribute data sets.
 \newblock {\em Information Visualization}, 1(1):20--34, 2002.
 
+\bibitem{koutrika2010explaining}
+G.~Koutrika, A.~Simitsis, and Y.~E. Ioannidis.
+\newblock Explaining structured queries in natural language.
+\newblock In {\em 2010 IEEE 26th International Conference on Data Engineering
+  (ICDE 2010)}, pp. 333--344. IEEE, 2010.
+
 \bibitem{law2018maqui}
 P.-M. Law, Z.~Liu, S.~Malik, and R.~C. Basole.
 \newblock Maqui: Interweaving queries and pattern mining for recursive event
   sequence exploration.
 \newblock {\em IEEE transactions on visualization and computer graphics},
   25(1):396--406, 2018.
+
+\bibitem{leventidis2020queryvis}
+A.~Leventidis, J.~Zhang, C.~Dunne, W.~Gatterbauer, H.~Jagadish, and
+  M.~Riedewald.
+\newblock Queryvis: Logic-based diagrams help users understand complicated sql
+  queries faster.
+\newblock In {\em Proceedings of the 2020 ACM SIGMOD International Conference
+  on Management of Data}, pp. 2303--2318, 2020.
 
 \bibitem{malik2015cohort}
 S.~Malik, F.~Du, M.~Monroe, E.~Onukwugha, C.~Plaisant, and B.~Shneiderman.

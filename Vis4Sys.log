@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.16)  29 MAR 2021 03:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.16)  29 MAR 2021 23:42
 entering extended mode
 **./Vis4Sys.tex
 (Vis4Sys.tex
@@ -645,37 +645,36 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  <./figures/teaser/systemview.png> <./diamondrule.pdf>]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 53.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 51.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 53.
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 6
-0.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 51.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 5
+8.
 
 (C:\Program Files\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )) (sections/related.tex
 [2]) (sections/background.tex
-<figures/background/background.pdf, id=187, 384.10199pt x 564.5361pt>
+<figures/background/background.pdf, id=212, 384.10199pt x 564.5361pt>
 File: figures/background/background.pdf Graphic file (type pdf)
 <use figures/background/background.pdf>
 Package pdftex.def Info: figures/background/background.pdf  used on input line 
-8.
+11.
 (pdftex.def)             Requested size: 216.26701pt x 317.86087pt.
 ) (sections/system.tex [3 <./figures/background/background.pdf>]
-<figures/system/sysdesign.pdf, id=216, 788.72469pt x 596.89699pt>
+<figures/system/sysdesign.pdf, id=245, 788.72469pt x 596.89699pt>
 File: figures/system/sysdesign.pdf Graphic file (type pdf)
 <use figures/system/sysdesign.pdf>
-Package pdftex.def Info: figures/system/sysdesign.pdf  used on input line 33.
+Package pdftex.def Info: figures/system/sysdesign.pdf  used on input line 45.
 (pdftex.def)             Requested size: 231.7141pt x 175.35445pt.
 ) (sections/dataprocess.tex
-<figures/model/datamodel.pdf, id=220, 380.38412pt x 174.87534pt>
+<figures/model/datamodel.pdf, id=249, 380.38412pt x 174.87534pt>
 File: figures/model/datamodel.pdf Graphic file (type pdf)
 <use figures/model/datamodel.pdf>
 Package pdftex.def Info: figures/model/datamodel.pdf  used on input line 16.
 (pdftex.def)             Requested size: 216.26701pt x 99.42647pt.
- [4 <./figures/system/sysdesign.pdf> <./figures/model/datamodel.pdf>]) (section
-s/visualization.tex
-<figures/visualization/progressdesign.pdf, id=10747, 574.59064pt x 331.01468pt>
+ [4 <./figures/system/sysdesign.pdf>]) (sections/visualization.tex
+<figures/visualization/progressdesign.pdf, id=10759, 574.59064pt x 331.01468pt>
 
 File: figures/visualization/progressdesign.pdf Graphic file (type pdf)
 <use figures/visualization/progressdesign.pdf>
@@ -684,56 +683,55 @@ t line 17.
 (pdftex.def)             Requested size: 180.22644pt x 103.8257pt.
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 27.
-<figures/visualization/exeprogress.pdf, id=10756, 775.78731pt x 1530.60835pt>
+ [5 <./figures/model/datamodel.pdf> <./figures/visualization/progressdesign.pdf
+>]
+<figures/visualization/exeprogress.pdf, id=10806, 775.78731pt x 1530.60835pt>
 File: figures/visualization/exeprogress.pdf Graphic file (type pdf)
 <use figures/visualization/exeprogress.pdf>
 Package pdftex.def Info: figures/visualization/exeprogress.pdf  used on input l
-ine 83.
+ine 81.
 (pdftex.def)             Requested size: 231.7141pt x 457.15416pt.
-<figures/visualization/patternexplorer.pdf, id=10757, 372.05699pt x 421.6854pt>
+<figures/visualization/patternexplorer.pdf, id=10807, 372.05699pt x 421.6854pt>
 
 File: figures/visualization/patternexplorer.pdf Graphic file (type pdf)
 <use figures/visualization/patternexplorer.pdf>
 Package pdftex.def Info: figures/visualization/patternexplorer.pdf  used on inp
-ut line 113.
+ut line 111.
 (pdftex.def)             Requested size: 247.16118pt x 280.13414pt.
- [5 <./figures/visualization/progressdesign.pdf>]
+ [6 <./figures/visualization/exeprogress.pdf> <./figures/visualization/patterne
+xplorer.pdf>]
 
-LaTeX Warning: Reference `' on page 6 undefined on input line 141.
+LaTeX Warning: Reference `' on page 7 undefined on input line 138.
 
-
-LaTeX Warning: Reference `' on page 6 undefined on input line 141.
-
-[6 <./figures/visualization/exeprogress.pdf> <./figures/visualization/patternex
-plorer.pdf>]
-<figures/visualization/taskList.pdf, id=11415, 545.92856pt x 293.98734pt>
+<figures/visualization/taskList.pdf, id=11447, 545.92856pt x 293.98734pt>
 File: figures/visualization/taskList.pdf Graphic file (type pdf)
 <use figures/visualization/taskList.pdf>
 Package pdftex.def Info: figures/visualization/taskList.pdf  used on input line
- 159.
+ 156.
 (pdftex.def)             Requested size: 247.16118pt x 133.09604pt.
 
-
-LaTeX Warning: Reference `**' on page 7 undefined on input line 167.
+LaTeX Warning: Reference `**' on page 7 undefined on input line 164.
 
 ) (sections/evaluation.tex) (sections/conclusion.tex) (Vis4Sys.bbl [7 <./figure
-s/visualization/taskList.pdf>]) [8
+s/visualization/taskList.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-] (Vis4Sys.aux)
+) [8]
+(Vis4Sys.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Vis4Sys.out' has not changed.
-(rerunfilecheck)             Checksum: 2CB9A1DBB343AE9B48D87EAACF1DFEF0;3424.
+(rerunfilecheck)             Checksum: EE267651F5D832B2BEE4209519E8CF8D;3697.
  ) 
 Here is how much of TeX's memory you used:
- 13243 strings out of 479334
- 194716 string characters out of 2866936
- 559501 words of memory out of 3000000
- 29857 multiletter control sequences out of 15000+200000
- 485256 words of font info for 457 fonts, out of 3000000 for 9000
+ 13275 strings out of 479334
+ 195323 string characters out of 2866936
+ 558360 words of memory out of 3000000
+ 29867 multiletter control sequences out of 15000+200000
+ 485896 words of font info for 465 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,10n,74p,1455b,468s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 72i,10n,74p,1556b,468s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX
 /fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1
 /public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsf
@@ -747,9 +745,9 @@ pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb><C:/Program F
 iles/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/typ
 e1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.
 pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Vis4Sys.pdf (8 pages, 4315981 bytes).
+Output written on Vis4Sys.pdf (8 pages, 4325564 bytes).
 PDF statistics:
- 11580 PDF objects out of 12825 (max. 8388607)
- 77 named destinations out of 1000 (max. 500000)
+ 11614 PDF objects out of 12825 (max. 8388607)
+ 87 named destinations out of 1000 (max. 500000)
  109310 words of extra memory for PDF output out of 128383 (max. 10000000)
 
