@@ -1,0 +1,11 @@
+\subsection{Case study}
+We demonstrate the effectiveness of $\DQV$ by analyzing several real world cases which are performed on the simulation mode. 
+
+\subsubsection{Identify the bottleneck}
+In this case study, we select a query case which runs longer than the expection. This case run ** seconds and is executed on an cluster with 5 nodes, with the execution plan shown as the Figure{**}(A).
+
+When exploring the execution with $\DQV$, we found that in the progress view, it is clear that the Map 1 significantly ran longer than the duration of other vertices. On the other side, the Reducer 2, a subsequent vertex of Map 1, finished in a very short time after Map 1 is finished and it is followed by a sequence of short reduce vertices(shown as Figure(**)(B3)) and then the query is finihsed. 
+We guess the bottlenect must be related Map 1 and hover mouse on it to highlight the associated tasks in the Distribution View. 
+As show by the purple dots(shown as Figure{**}(D)), we notice that several tasks of Map 1 run on machine dbg18 and it seems that dbg18 only execute very few tasks in this case. We further check the cluster status and notice that something wrong with the network of dbg18, thus the tasks assigned to it are executed very late, leading to the overall long duration of the query execution.
+
+However, we notice another vertex Map 24 is also have a very long duration, but it has no tasks executed on dbg18. So we think dbg18 is the not the only bottoleneck of this query.
