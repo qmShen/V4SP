@@ -55,6 +55,7 @@
 \usepackage{tabu}                      % only used for the table example
 \usepackage{booktabs}                  % only used for the table example
 \usepackage{amsfonts}
+\usepackage{amsmath}
 %% We encourage the use of mathptmx for consistent usage of times font
 %% throughout the proceedings. However, if you encounter conflicts
 %% with other math-related packages, you may want to disable it.
@@ -88,6 +89,8 @@
 \newcommand{\sstitle}[1]{\vspace*{0.4em}\noindent{\bf #1\/.}}
 \newcommand{\DQV}{\mathsf{QEVIS}}
 
+
+\newcommand{\QM}[1]{{\color{blue}{#1}}}
 %% Paper title.
 \title{$\DQV$: Understanding and Diagnosing the Fine-grained Execution Process of Hive Query via Visualization}
 
@@ -172,9 +175,9 @@ Understanding the query execution of distributed databases is crucial to many re
 \input{sections/conclusion}
 
 %% if specified like this the section will be committed in review mode
-\acknowledgments{
-The authors wish to thank A, B, and C. This work was supported in part by
-a grant from XYZ (\# 12345-67890).}
+% \acknowledgments{
+% The authors wish to thank A, B, and C. This work was supported in part by
+% a grant from XYZ (\# 12345-67890).}
 
 %\bibliographystyle{abbrv}
 \bibliographystyle{abbrv-doi}

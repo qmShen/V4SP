@@ -7,45 +7,45 @@ Reallocating 'name_of_file' (item size: 1) to 9 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: template.bib
 Warning--can't use both volume and number fields in moritz2015perfopticon
-You've used 26 entries,
+You've used 29 entries,
             2598 wiz_defined-function locations,
-            739 strings with 10011 characters,
-and the built_in function-call counts, 11826 in all, are:
-= -- 1140
-> -- 671
-< -- 15
-+ -- 265
-- -- 238
-* -- 888
-:= -- 1867
-add.period$ -- 81
-call.type$ -- 26
-change.case$ -- 197
+            758 strings with 10506 characters,
+and the built_in function-call counts, 12900 in all, are:
+= -- 1249
+> -- 714
+< -- 17
++ -- 283
+- -- 252
+* -- 956
+:= -- 2036
+add.period$ -- 91
+call.type$ -- 29
+change.case$ -- 211
 chr.to.int$ -- 0
-cite$ -- 27
-duplicate$ -- 418
-empty$ -- 866
-format.name$ -- 238
-if$ -- 2513
+cite$ -- 30
+duplicate$ -- 465
+empty$ -- 957
+format.name$ -- 252
+if$ -- 2749
 int.to.chr$ -- 0
-int.to.str$ -- 26
-missing$ -- 24
-newline$ -- 131
-num.names$ -- 52
-pop$ -- 221
+int.to.str$ -- 29
+missing$ -- 28
+newline$ -- 146
+num.names$ -- 58
+pop$ -- 240
 preamble$ -- 1
-purify$ -- 171
+purify$ -- 183
 quote$ -- 0
-skip$ -- 331
+skip$ -- 365
 stack$ -- 0
-substring$ -- 731
-swap$ -- 145
-text.length$ -- 15
+substring$ -- 798
+swap$ -- 158
+text.length$ -- 17
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 104
+type$ -- 114
 warning$ -- 1
-while$ -- 109
-width$ -- 28
-write$ -- 286
+while$ -- 120
+width$ -- 31
+write$ -- 320
 (There was 1 warning)
