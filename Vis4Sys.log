@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.16)  29 MAR 2021 03:00
+=======
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.16)  31 MAR 2021 04:39
+>>>>>>> 87e38476d46c232532b1981a1ff0ea0f46d2299d
 entering extended mode
 **./Vis4Sys.tex
 (Vis4Sys.tex
@@ -446,6 +450,7 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
 
 Package hyperref Warning: Option `pdftex' has already been used,
+<<<<<<< HEAD
 (hyperref)                setting the option has no effect on input line 155.
 
 
@@ -476,6 +481,38 @@ Package hyperref Info: Option `nesting' set `true' on input line 155.
 Package hyperref Info: Option `linktocpage' set `true' on input line 155.
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 1
 61.
+=======
+(hyperref)                setting the option has no effect on input line 157.
+
+
+Package hyperref Warning: Option `pagebackref' has already been used,
+(hyperref)                setting the option has no effect on input line 157.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 157.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 157.
+
+Package hyperref Info: Option `pageanchor' set `true' on input line 157.
+Package hyperref Info: Option `plainpages' set `false' on input line 157.
+Package hyperref Info: Option `hypertexnames' set `false' on input line 157.
+
+Package hyperref Warning: Option `bookmarks' has already been used,
+(hyperref)                setting the option has no effect on input line 157.
+
+Package hyperref Info: Option `bookmarksnumbered' set `false' on input line 157
+.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 157.
+Package hyperref Info: Option `breaklinks' set `true' on input line 157.
+Package hyperref Info: Option `colorlinks' set `false' on input line 157.
+Package hyperref Info: Option `nesting' set `true' on input line 157.
+Package hyperref Info: Option `linktocpage' set `true' on input line 157.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 1
+63.
+>>>>>>> 87e38476d46c232532b1981a1ff0ea0f46d2299d
 (C:\Program Files\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
@@ -483,6 +520,7 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 File: l3backend-pdftex.def 2021-02-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count297
 \l__pdf_internal_box=\box58
+<<<<<<< HEAD
 ) (Vis4Sys.aux)
 \openout1 = `Vis4Sys.aux'.
 
@@ -504,6 +542,33 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 161.
 LaTeX Font Info:    ... okay on input line 161.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 161.
 LaTeX Font Info:    ... okay on input line 161.
+=======
+) (Vis4Sys.aux
+
+LaTeX Warning: Label `fig:casestudy2' multiply defined.
+
+)
+\openout1 = `Vis4Sys.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+>>>>>>> 87e38476d46c232532b1981a1ff0ea0f46d2299d
  (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count298
@@ -522,14 +587,22 @@ Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 )
+<<<<<<< HEAD
 LaTeX Info: Redefining \microtypecontext on input line 161.
+=======
+LaTeX Info: Redefining \microtypecontext on input line 163.
+>>>>>>> 87e38476d46c232532b1981a1ff0ea0f46d2299d
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
+<<<<<<< HEAD
 LaTeX Info: Redefining \showhyphens on input line 161.
+=======
+LaTeX Info: Redefining \showhyphens on input line 163.
+>>>>>>> 87e38476d46c232532b1981a1ff0ea0f46d2299d
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -537,7 +610,11 @@ Package microtype Info: No adjustment of character kerning.
 (C:\Program Files\MiKTeX\tex/latex/microtype\mt-ptm.cfg
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
+<<<<<<< HEAD
 Package hyperref Info: Link coloring OFF on input line 161.
+=======
+Package hyperref Info: Link coloring OFF on input line 163.
+>>>>>>> 87e38476d46c232532b1981a1ff0ea0f46d2299d
 
 (C:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -550,16 +627,26 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count304
 )
+<<<<<<< HEAD
 LaTeX Info: Redefining \ref on input line 161.
 LaTeX Info: Redefining \pageref on input line 161.
 LaTeX Info: Redefining \nameref on input line 161.
+=======
+LaTeX Info: Redefining \ref on input line 163.
+LaTeX Info: Redefining \pageref on input line 163.
+LaTeX Info: Redefining \nameref on input line 163.
+>>>>>>> 87e38476d46c232532b1981a1ff0ea0f46d2299d
 
 (Vis4Sys.out) (Vis4Sys.out)
 \@outlinefile=\write3
 \openout3 = `Vis4Sys.out'.
 
 LaTeX Font Info:    Trying to load font information for OT1+phv on input line 1
+<<<<<<< HEAD
 70.
+=======
+72.
+>>>>>>> 87e38476d46c232532b1981a1ff0ea0f46d2299d
  (C:\Program Files\MiKTeX\tex/latex/psnfss\ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 )
@@ -568,7 +655,11 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
+<<<<<<< HEAD
  170.
+=======
+ 172.
+>>>>>>> 87e38476d46c232532b1981a1ff0ea0f46d2299d
  (C:\Program Files\MiKTeX\tex/latex/psnfss\ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
@@ -577,29 +668,49 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
+<<<<<<< HEAD
  170.
+=======
+ 172.
+>>>>>>> 87e38476d46c232532b1981a1ff0ea0f46d2299d
 
 (C:\Program Files\MiKTeX\tex/latex/psnfss\omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
+<<<<<<< HEAD
  170.
+=======
+ 172.
+>>>>>>> 87e38476d46c232532b1981a1ff0ea0f46d2299d
 
 (C:\Program Files\MiKTeX\tex/latex/psnfss\omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
+<<<<<<< HEAD
  170.
+=======
+ 172.
+>>>>>>> 87e38476d46c232532b1981a1ff0ea0f46d2299d
 
 (C:\Program Files\MiKTeX\tex/latex/psnfss\omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
+<<<<<<< HEAD
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 170.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 170.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 170.
+=======
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 172.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 172.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 172.
+>>>>>>> 87e38476d46c232532b1981a1ff0ea0f46d2299d
 
 (C:\Program Files\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
@@ -612,14 +723,21 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+<<<<<<< HEAD
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 170.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 170.
+=======
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 172.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 172.
+>>>>>>> 87e38476d46c232532b1981a1ff0ea0f46d2299d
 
 
 LaTeX Warning: No \author given.
 
 \abstractwidth=\skip65
+<<<<<<< HEAD
 <figures/teaser/systemview.png, id=107, 1444.64719pt x 812.28468pt>
 File: figures/teaser/systemview.png Graphic file (type png)
 <use figures/teaser/systemview.png>
@@ -636,6 +754,23 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
 File: diamondrule.pdf Graphic file (type pdf)
 <use diamondrule.pdf>
 Package pdftex.def Info: diamondrule.pdf  used on input line 170.
+=======
+<figures/teaser/teaser.pdf, id=119, 1939.91756pt x 1096.76756pt>
+File: figures/teaser/teaser.pdf Graphic file (type pdf)
+<use figures/teaser/teaser.pdf>
+Package pdftex.def Info: figures/teaser/teaser.pdf  used on input line 172.
+(pdftex.def)             Requested size: 467.22528pt x 264.15002pt.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 172.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 172.
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <8> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 172.
+<diamondrule.pdf, id=120, 213.79875pt x 12.045pt>
+File: diamondrule.pdf Graphic file (type pdf)
+<use diamondrule.pdf>
+Package pdftex.def Info: diamondrule.pdf  used on input line 172.
+>>>>>>> 87e38476d46c232532b1981a1ff0ea0f46d2299d
 (pdftex.def)             Requested size: 213.79822pt x 12.04495pt.
 (sections/intro.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -643,6 +778,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [1{C:/Users/Administrator/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
 
 
+<<<<<<< HEAD
  <./figures/teaser/systemview.png> <./diamondrule.pdf>]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 53.
@@ -650,11 +786,21 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 53.
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 6
 0.
+=======
+ <./figures/teaser/teaser.pdf> <./diamondrule.pdf>]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 51.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 51.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 5
+8.
+>>>>>>> 87e38476d46c232532b1981a1ff0ea0f46d2299d
 
 (C:\Program Files\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )) (sections/related.tex
 [2]) (sections/background.tex
+<<<<<<< HEAD
 <figures/background/background.pdf, id=187, 384.10199pt x 564.5361pt>
 File: figures/background/background.pdf Graphic file (type pdf)
 <use figures/background/background.pdf>
@@ -676,10 +822,72 @@ Package pdftex.def Info: figures/model/datamodel.pdf  used on input line 16.
  [4 <./figures/system/sysdesign.pdf> <./figures/model/datamodel.pdf>]) (section
 s/visualization.tex
 <figures/visualization/progressdesign.pdf, id=10747, 574.59064pt x 331.01468pt>
+=======
+<figures/background/background.pdf, id=733, 384.10199pt x 564.5361pt>
+File: figures/background/background.pdf Graphic file (type pdf)
+<use figures/background/background.pdf>
+Package pdftex.def Info: figures/background/background.pdf  used on input line 
+11.
+(pdftex.def)             Requested size: 216.26701pt x 317.86087pt.
+) (sections/system.tex [3 <./figures/background/background.pdf>]
+<figures/system/sysdesign.pdf, id=776, 788.72469pt x 596.89699pt>
+File: figures/system/sysdesign.pdf Graphic file (type pdf)
+<use figures/system/sysdesign.pdf>
+Package pdftex.def Info: figures/system/sysdesign.pdf  used on input line 64.
+(pdftex.def)             Requested size: 231.7141pt x 175.35445pt.
+) (sections/dataprocess.tex [4 <./figures/system/sysdesign.pdf>]
+<figures/model/datamodel.pdf, id=11285, 380.38412pt x 174.87534pt>
+File: figures/model/datamodel.pdf Graphic file (type pdf)
+<use figures/model/datamodel.pdf>
+Package pdftex.def Info: figures/model/datamodel.pdf  used on input line 26.
+(pdftex.def)             Requested size: 216.26701pt x 99.42647pt.
+) (sections/visualization.tex
+Underfull \hbox (badness 3396) in paragraph at lines 47--8
+[]\OT1/ptm/m/n/9 (+20) Each task is mod-eled as a se-quence of at-tributes $\OM
+L/ztmcm/m/it/9 t \OT1/ztmcm/m/n/9 :=\OML/ztmcm/m/it/9 <
+ []
+
+
+Underfull \hbox (badness 1033) in paragraph at lines 47--8
+\OML/ztmcm/m/it/9 st; d; v; m; S[] >$\OT1/ptm/m/n/9 (+20) , where $\OML/ztmcm/m
+/it/9 st$\OT1/ptm/m/n/9 (+20) , $\OML/ztmcm/m/it/9 d$ \OT1/ptm/m/n/9 (+20) and 
+$\OML/ztmcm/m/it/9 v$ \OT1/ptm/m/n/9 (+20) in-di-cate the \OT1/ptm/m/it/9 (+20)
+ start time\OT1/ptm/m/n/9 (+20) , \OT1/ptm/m/it/9 (+20) du-
+ []
+
+
+Underfull \hbox (badness 1122) in paragraph at lines 47--8
+\OT1/ptm/m/n/9 (+20) in-dex an $\OML/ztmcm/m/it/9 attr$ \OT1/ptm/m/n/9 (+20) of
+ $\OML/ztmcm/m/it/9 t$\OT1/ptm/m/n/9 (+20) . A log-i-cal ver-tex is mod-eled as
+ a triplet
+ []
+
+
+Underfull \hbox (badness 1184) in paragraph at lines 47--8
+\OML/ztmcm/m/it/9 v \OT1/ztmcm/m/n/9 :=\OML/ztmcm/m/it/9 < st; d; S[] >$\OT1/pt
+m/m/n/9 (+20) . The start time of $\OML/ztmcm/m/it/9 v$ \OT1/ptm/m/n/9 (+20) is
+ $\OML/ztmcm/m/it/9 v:st \OT1/ztmcm/m/n/9 = \OML/ztmcm/m/it/9 min\OT1/ztmcm/m/n
+/9 (\OMS/ztmcm/m/n/9 f\OML/ztmcm/m/it/9 t:st\OMS/ztmcm/m/n/9 j\OML/ztmcm/m/it/9
+ t \OMS/ztmcm/m/n/9 2
+ []
+
+
+Underfull \hbox (badness 2680) in paragraph at lines 47--8
+\OML/ztmcm/m/it/9 P\OT1/ztmcm/m/n/9 (\OML/ztmcm/m/it/9 v\OT1/ztmcm/m/n/9 )\OMS/
+ztmcm/m/n/9 g\OT1/ztmcm/m/n/9 )$\OT1/ptm/m/n/9 (+20) , the du-ra-tion of ver-te
+x $\OML/ztmcm/m/it/9 v$ \OT1/ptm/m/n/9 (+20) is $\OML/ztmcm/m/it/9 v:d \OT1/ztm
+cm/m/n/9 = \OML/ztmcm/m/it/9 v:st \OT1/ztmcm/m/n/9 + \OML/ztmcm/m/it/9 max\OT1/
+ztmcm/m/n/9 (\OMS/ztmcm/m/n/9 f\OT1/ztmcm/m/n/9 (\OML/ztmcm/m/it/9 t:st \OT1/zt
+mcm/m/n/9 +
+ []
+
+<figures/visualization/progressdesign.pdf, id=11287, 574.59064pt x 331.01468pt>
+>>>>>>> 87e38476d46c232532b1981a1ff0ea0f46d2299d
 
 File: figures/visualization/progressdesign.pdf Graphic file (type pdf)
 <use figures/visualization/progressdesign.pdf>
 Package pdftex.def Info: figures/visualization/progressdesign.pdf  used on inpu
+<<<<<<< HEAD
 t line 17.
 (pdftex.def)             Requested size: 180.22644pt x 103.8257pt.
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
@@ -691,10 +899,24 @@ Package pdftex.def Info: figures/visualization/exeprogress.pdf  used on input l
 ine 83.
 (pdftex.def)             Requested size: 231.7141pt x 457.15416pt.
 <figures/visualization/patternexplorer.pdf, id=10757, 372.05699pt x 421.6854pt>
+=======
+t line 18.
+(pdftex.def)             Requested size: 180.22644pt x 103.8257pt.
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 28.
+<figures/visualization/exeprogress.pdf, id=11300, 775.78731pt x 1530.60835pt>
+File: figures/visualization/exeprogress.pdf Graphic file (type pdf)
+<use figures/visualization/exeprogress.pdf>
+Package pdftex.def Info: figures/visualization/exeprogress.pdf  used on input l
+ine 93.
+(pdftex.def)             Requested size: 231.7141pt x 457.15416pt.
+<figures/visualization/patternexplorer.pdf, id=11301, 372.05699pt x 421.6854pt>
+>>>>>>> 87e38476d46c232532b1981a1ff0ea0f46d2299d
 
 File: figures/visualization/patternexplorer.pdf Graphic file (type pdf)
 <use figures/visualization/patternexplorer.pdf>
 Package pdftex.def Info: figures/visualization/patternexplorer.pdf  used on inp
+<<<<<<< HEAD
 ut line 113.
 (pdftex.def)             Requested size: 247.16118pt x 280.13414pt.
  [5 <./figures/visualization/progressdesign.pdf>]
@@ -734,6 +956,77 @@ Here is how much of TeX's memory you used:
  485256 words of font info for 457 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,10n,74p,1455b,468s stack positions out of 5000i,500n,10000p,200000b,50000s
+=======
+ut line 123.
+(pdftex.def)             Requested size: 247.16118pt x 280.13414pt.
+[5 <./figures/model/datamodel.pdf> <./figures/visualization/progressdesign.pdf>
+]
+
+LaTeX Warning: Reference `' on page 6 undefined on input line 177.
+
+[6 <./figures/visualization/exeprogress.pdf>]
+<figures/visualization/taskList.pdf, id=11512, 545.92856pt x 293.98734pt>
+File: figures/visualization/taskList.pdf Graphic file (type pdf)
+<use figures/visualization/taskList.pdf>
+Package pdftex.def Info: figures/visualization/taskList.pdf  used on input line
+ 188.
+(pdftex.def)             Requested size: 247.16118pt x 133.09604pt.
+
+
+LaTeX Warning: Reference `**' on page 7 undefined on input line 199.
+
+) (sections/evaluation.tex (sections/case.tex [7 <./figures/visualization/patte
+rnexplorer.pdf> <./figures/visualization/taskList.pdf
+
+pdfTeX warning: pdflatex.exe (file ./figures/visualization/taskList.pdf): PDF i
+nclusion: multiple pdfs with page group included in a single page
+>]
+<figures/case_study/CaseStudy1.pdf, id=12078, 819.95232pt x 651.32231pt>
+File: figures/case_study/CaseStudy1.pdf Graphic file (type pdf)
+<use figures/case_study/CaseStudy1.pdf>
+Package pdftex.def Info: figures/case_study/CaseStudy1.pdf  used on input line 
+17.
+(pdftex.def)             Requested size: 231.7141pt x 184.05852pt.
+<figures/case_study/CaseStudy2.pdf, id=12081, 1109.03336pt x 351.2011pt>
+File: figures/case_study/CaseStudy2.pdf Graphic file (type pdf)
+<use figures/case_study/CaseStudy2.pdf>
+Package pdftex.def Info: figures/case_study/CaseStudy2.pdf  used on input line 
+35.
+(pdftex.def)             Requested size: 502.63797pt x 159.17511pt.
+<figures/case_study/CaseStudy3.pdf, id=12082, 1126.0971pt x 518.82732pt>
+File: figures/case_study/CaseStudy3.pdf Graphic file (type pdf)
+<use figures/case_study/CaseStudy3.pdf>
+Package pdftex.def Info: figures/case_study/CaseStudy3.pdf  used on input line 
+51.
+(pdftex.def)             Requested size: 231.7141pt x 106.75612pt.
+) (sections/user.tex)) (sections/conclusion.tex) (Vis4Sys.bbl [8 <./figures/cas
+e_study/CaseStudy1.pdf>]
+Underfull \vbox (badness 2065) has occurred while \output is active []
+
+) [9 <./figures/case_study/CaseStudy2.pdf> <./figures/case_study/CaseStudy3.pdf
+
+
+pdfTeX warning: pdflatex.exe (file ./figures/case_study/CaseStudy3.pdf): PDF in
+clusion: multiple pdfs with page group included in a single page
+>] (Vis4Sys.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `Vis4Sys.out' has not changed.
+(rerunfilecheck)             Checksum: 1A5F506A7020E76EDD6294C375EA4A84;4318.
+ ) 
+Here is how much of TeX's memory you used:
+ 13321 strings out of 479334
+ 196471 string characters out of 2866936
+ 562830 words of memory out of 3000000
+ 29890 multiletter control sequences out of 15000+200000
+ 486229 words of font info for 471 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 72i,10n,74p,1556b,483s stack positions out of 5000i,500n,10000p,200000b,50000s
+>>>>>>> 87e38476d46c232532b1981a1ff0ea0f46d2299d
 {C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX
 /fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1
 /public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsf
@@ -747,9 +1040,17 @@ pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb><C:/Program F
 iles/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/typ
 e1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.
 pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+<<<<<<< HEAD
 Output written on Vis4Sys.pdf (8 pages, 4315981 bytes).
 PDF statistics:
  11580 PDF objects out of 12825 (max. 8388607)
  77 named destinations out of 1000 (max. 500000)
  109310 words of extra memory for PDF output out of 128383 (max. 10000000)
+=======
+Output written on Vis4Sys.pdf (9 pages, 6519817 bytes).
+PDF statistics:
+ 16458 PDF objects out of 18468 (max. 8388607)
+ 94 named destinations out of 1000 (max. 500000)
+ 109349 words of extra memory for PDF output out of 128383 (max. 10000000)
+>>>>>>> 87e38476d46c232532b1981a1ff0ea0f46d2299d
 

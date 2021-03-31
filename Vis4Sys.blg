@@ -6,6 +6,7 @@ The style file: abbrv-doi.bst
 Reallocating 'name_of_file' (item size: 1) to 9 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: template.bib
+<<<<<<< HEAD
 Warning--can't use both volume and number fields in moritz2015perfopticon
 You've used 29 entries,
             2598 wiz_defined-function locations,
@@ -49,3 +50,49 @@ while$ -- 120
 width$ -- 31
 write$ -- 320
 (There was 1 warning)
+=======
+Warning--I didn't find a database entry for ""
+Warning--can't use both volume and number fields in moritz2015perfopticon
+You've used 39 entries,
+            2598 wiz_defined-function locations,
+            813 strings with 12661 characters,
+and the built_in function-call counts, 17504 in all, are:
+= -- 1718
+> -- 907
+< -- 24
++ -- 361
+- -- 318
+* -- 1252
+:= -- 2711
+add.period$ -- 124
+call.type$ -- 39
+change.case$ -- 272
+chr.to.int$ -- 0
+cite$ -- 40
+duplicate$ -- 662
+empty$ -- 1337
+format.name$ -- 318
+if$ -- 3784
+int.to.chr$ -- 0
+int.to.str$ -- 39
+missing$ -- 39
+newline$ -- 196
+num.names$ -- 78
+pop$ -- 323
+preamble$ -- 1
+purify$ -- 235
+quote$ -- 0
+skip$ -- 527
+stack$ -- 0
+substring$ -- 1144
+swap$ -- 240
+text.length$ -- 24
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 152
+warning$ -- 1
+while$ -- 165
+width$ -- 41
+write$ -- 432
+(There were 2 warnings)
+>>>>>>> 87e38476d46c232532b1981a1ff0ea0f46d2299d
