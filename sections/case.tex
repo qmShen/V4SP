@@ -32,7 +32,7 @@ To address this problem, we directly remove the node dbg18, stop the other progr
 	\vspace{2mm}
 	\centering
 	\small
-	\includegraphics[width=2\columnwidth]{figures/case_study/CaseStudy2.pdf}  
+	\includegraphics[width=1\textwidth]{figures/case_study/CaseStudy2.pdf}  
 
 	%\vspace{-3mm}
 	\caption{Analyze the task failure.} 
@@ -50,15 +50,16 @@ When the system executes the Reducer3 tasks shown in the groupXX, these tasks ar
 Moreover, the system also has the mechanism to solve this problem: when the system detects long time  of low resource usage, it abandoned two waiting Reduce3 tasks executed on dbg19 and dbg20, free up two workers to execute the Map8 tasks. After that, some of the waiting Reducer3 tasks receive the data and finish quickly. The data dependencies shown as Figure~\ref{fig:casestudy2}(A5) indicates the data transmit from the Map8 tasks shown in Figure~\ref{fig:casestudy2}(A5) to the Reducer3 Tasks shown in Figure~\ref{fig:casestudy2}(A4), which also verify our hypothesis.
 
 \subsubsection{Understand the data skew}
-Abnormal long execution duration of tasks may results from many reasons, such as the limited resources 
-
 
 \begin{figure}[t]
 	\centering
-	\includegraphics[width=0.45\textwidth]{figures/case_study/CaseStudy3.pdf}
+	\includegraphics[width=0.5\textwidth]{figures/case_study/CaseStudy3.pdf}
 	\vspace{-3mm}
 	\caption{Detect the data skew.}
 	\label{fig:casestudy3}
 	\vspace{-3mm}
 \end{figure}
+
+In the third case, we highlight the tasks of Reducer2 by blue color. These tasks can form two groups, the tasks of the first group layout on the vertical line and an outlier point far away from the other points at x-direction, indicating it has a very long duration.
+According to the dependencies shown in the region Figure~\ref{fig:casestudy3}(A1), these tasks are waiting for the data from the map tasks shown in region **, and quickly finish once they receive the data. The tasks of the second group layout on the diagonal line, indicating these tasks are quickly finished because they all start after the data is ready. All of the two groups show that the tasks of Reducer2 can be finished quickly. Then, we want to explore why the outlier runs in so slow. We click Reducer2 to list all the tasks in the Task View and sort them by the task duration shown as Figure~\ref{fig:casestudy3}(B). The outlier appears on the top of the task view and has a significant long green bar indicating the processing time, which we guess this task process and generate more data than the other tasks. To verify our assumption, we re-sort these tasks by the input data("FILE BYTES READ") and click the first two tasks to observe their extension form. In the dependency view, we find the source dependency has a dark color than the second task. We further check the amount of data by showing the data information shown as Figure ** and **; we find the input of the first task in 10 more than the second task. These patterns show that this query suffers a serious data skew problem.  
 
